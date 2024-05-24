@@ -18,6 +18,14 @@ public class FarmSimulator {
         Chicken chicken = new Chicken(1, "Lucy", "white and brown", 0, true, new Date());
         System.out.println("Chicken --> \n" + chicken);
         
+        int id = 2;
+        String name = "Maruja";
+        String color = "black";
+        int age = 1;
+        boolean molting = false;
+        Date bornOnDate = new Date();
         
+        chicken = new Chicken(id, name, color, age, molting, bornOnDate);
+        System.out.println("Chicken 2 --> \n" + chicken);
     }
 }
