@@ -22,4 +22,9 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 /ws/gualotuna/u1/ws_08CDforJava/ChickenFarmSimulator2/nbproject/private/
+=======
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
+>>>>>>> d8e77f950f49a5c5381680c8ac78c9bb80804cb2
