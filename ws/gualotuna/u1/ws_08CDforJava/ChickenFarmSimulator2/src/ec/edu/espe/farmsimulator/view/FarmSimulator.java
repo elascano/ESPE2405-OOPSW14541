@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author Brayan Gualotuña
+ * @author Brayan Gualotuña, Dev Dynasty, DCCO-ESPE
  */
 public class FarmSimulator {
     public static void main(String[] args) {

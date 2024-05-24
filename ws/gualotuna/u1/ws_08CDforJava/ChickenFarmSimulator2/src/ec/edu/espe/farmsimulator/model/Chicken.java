@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author Usuario
+ * @author Brayan Gualotuña, Dev Dynasty, DCCO-ESPE
  */
 public class Chicken {
     private int id;
