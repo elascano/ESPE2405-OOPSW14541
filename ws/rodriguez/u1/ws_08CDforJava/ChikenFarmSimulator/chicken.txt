@@ -1,0 +1,6 @@
+ID: 620
+Name: Tony
+Color: Blue
+Age: 10
+Is molting: true
+Born on date: 26/05/2024
