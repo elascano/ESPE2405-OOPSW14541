@@ -35,7 +35,7 @@ public class AntColonySimulator {
         System.out.println("Cell --> " + cell);
         System.out.println("FoodPile --> " + foodpile);
         System.out.println("Ants --> " + ant);
-        System.out.println("Ant --> " + ant);
+        System.out.println("Ant --> " + ants);
         
     }
 }
