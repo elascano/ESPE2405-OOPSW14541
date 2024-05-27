@@ -1,0 +1,5 @@
+Brayan's Chicken Farm Simulator V 0.5
+Chicken --> 
+Chicken{id=1, name=Lucy, color=white and brown, age=0, molting=true, bornOnDate=Mon May 27 00:19:56 ECT 2024}
+Chicken 2 --> 
+Chicken{id=2, name=Pepe, color=White, age=0, molting=false, bornOnDate=Mon May 27 00:20:21 ECT 2024}
