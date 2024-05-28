@@ -4,6 +4,7 @@
  */
 package ec.edu.espe.farmsimulator.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -18,20 +19,22 @@ public class Chicken {
     private boolean molting;
     private Date bornOnDate;
 
-    public Chicken(int id, String name, String color, int age, boolean molting, Date BornOnDaate) {
+    public Chicken(int id, String name, String color, int age, boolean molting, Date bornOnDate) {
         this.id = id;
         this.name = name;
         this.color = color;
         this.age = age;
         this.molting = molting;
-        this.bornOnDate = BornOnDaate;
+        this.bornOnDate = bornOnDate;
     }
 
     
     
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", BornOnDaate=" + bornOnDate + '}';
+       SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String formattedDate = dateFormat.format(bornOnDate); 
+        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + formattedDate + '}';
     }
     
     
@@ -108,17 +111,17 @@ public class Chicken {
     }
 
     /**
-     * @return the BornOnDaate
+     * @return the BornOnDate
      */
-    public Date getBornOnDaate() {
+    public Date getBornOnDate() {
         return bornOnDate;
     }
 
     /**
-     * @param BornOnDaate the BornOnDaate to set
+     * @param bornOnDate the bornOnDate to set
      */
-    public void setBornOnDaate(Date BornOnDaate) {
-        this.bornOnDate = BornOnDaate;
+    public void setBornOnDate(Date bornOnDate) {
+        this.bornOnDate = bornOnDate;
     }
     
     
