@@ -26,7 +26,7 @@ public class Chicken {
     
     @Override
     public String toString() {
-        return "Chicken{" + id + ", " + name + ", " + color + ", " + age + ", " + molting + ", " + bornOnDate + '}';
+        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
     }
 
     
