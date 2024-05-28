@@ -1,0 +1,5 @@
+Brayan's Chicken Farm Simulator V 0.5
+Chicken --> 
+ID: 1, Name: Lucy, Color: white and brown, Age: 0, Molting: true, Born On: Mon May 27 2024 00:27:35 GMT-0500 (hora de Ecuador)
+Chicken 2 --> 
+ID: 2, Name: Pepe, Color: White, Age: 0, Molting: false, Born On: Mon May 27 2024 00:27:53 GMT-0500 (hora de Ecuador)
