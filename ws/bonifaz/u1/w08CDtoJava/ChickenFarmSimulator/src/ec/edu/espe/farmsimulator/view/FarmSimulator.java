@@ -1,31 +1,51 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espe.farmsimulator.view;
 
 import ec.edu.espe.farmsimulator.model.Chicken;
 import java.util.Date;
-
+import java.util.Scanner;
+import utils.AgeCalculator;
+import utils.DateConverter;
+import utils.FileManager;
 /**
  *
  * @author Christian Bonifaz, Code Creators, DCCO-ESPE
  */
 public class FarmSimulator {
     public static void main(String[] args) {
-        System.out.println("Christian's Chicken farm simulator V0.9");
-       
-        Chicken chicken= new Chicken(1, "Luccy", "White and brown", 0, true, new Date());
-        System.out.println("Chicken -->\n" + chicken);
+        Scanner scanner = new Scanner(System.in);
         
-        int id=2;
-        String name="Maruja";
-        String color="black";
-        int age=1;
-        boolean molting=false;
-        Date bornOnDate=new Date();
+        System.out.println("Christian's Chicken farm simulator V0.6");
+        System.out.print("\nHow many chickens do you want to enter?: ");
+        int chickenNumber = scanner.nextInt();
         
-        chicken = new Chicken(id, name, color, age, molting, bornOnDate);
-        System.out.println("Chicken 2 --> \n" + chicken);
+        for (int aux = 0; aux < chickenNumber; aux++) {
+
+            System.out.println("\nChicken Data");
+
+            int id= FileManager.FileReadLastId()+1;
+            
+            System.out.print("ID: "+ id+"\n");          
+
+            System.out.print("Name: ");
+            String name = scanner.next();
+
+            System.out.print("Color: ");
+            String color = scanner.next();
+
+            System.out.print("Molting [true/false]: ");
+            boolean molting = scanner.nextBoolean();      
+
+            System.out.print("Born on date [dd/MM/yyyy]: ");
+            String bornOnDate = scanner.next();
+
+            int age = AgeCalculator.AgeCalculator(bornOnDate);
+            Date born=DateConverter.convertToDate(bornOnDate);
+
+
+            Chicken chicken = new Chicken(id, name, color, age, molting, born);
+            FileManager.FileSave(chicken);
+            
+        }
     }
 }
