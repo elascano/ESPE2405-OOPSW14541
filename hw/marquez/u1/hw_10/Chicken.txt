@@ -1,0 +1,5 @@
+Jenniffer's Chicken Farm Simulator V 0.5
+Chicken --> 
+ID: 1, Name: Lucy, Color: white and brown, Age: 0, Molting: true, Born On: Mon May 27 2024 01:12:23 GMT-0500 (hora estándar de Colombia)
+Chicken 2 --> 
+ID: 2, Name: Cielo, Color: Blue, Age: 28, Molting: false, Born On: Mon May 27 2024 01:13:01 GMT-0500 (hora estándar de Colombia)
