@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espe.farmsimulator.model;
 import java.util.Date;
 
@@ -30,7 +27,7 @@ public class Chicken {
     
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
+        return  id + ","+ name + ","+  color + "," +  age + "," + molting + "," + bornOnDate ;
     }
     
     
