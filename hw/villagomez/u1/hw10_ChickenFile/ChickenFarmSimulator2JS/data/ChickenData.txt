@@ -1,0 +1,6 @@
+Id: 1
+Name: Minie
+Color: White
+Age: 1
+Molting: false
+Born on date: Sun May 27 00:35:17 ECT 2024
