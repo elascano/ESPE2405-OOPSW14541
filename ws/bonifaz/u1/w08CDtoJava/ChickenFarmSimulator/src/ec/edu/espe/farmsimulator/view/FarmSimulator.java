@@ -16,7 +16,7 @@ public class FarmSimulator {
 
     public static void main(String[] args) throws FileNotFoundException {
         int age = 0, optionManager = 0, type = 0, idEdit = 0;
-        String bornOnDate = "", fileName = "", wordSearch,newData;
+        String bornOnDate = "", fileName = "", wordSearch, newData;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Christian's Chicken farm simulator V0.8");
