@@ -15,7 +15,7 @@ public class DateConverter {
         try {
             return formatter.parse(dateString);
         } catch (ParseException e) {
-            System.out.println("Formato de fecha inválido. Por favor, use dd/MM/yyyy.");
+            System.out.println("Invalid date format, use dd/MM/yyyy.");
             return null;
         }
     }
