@@ -121,7 +121,7 @@ public class FileManager {
     }
 
     public static void UpdateData(String fileName, int type, String wordSearch, String newData) {
-        
+
         if (type == 0) {
             fileName = fileName + ".txt";
         }
@@ -144,9 +144,7 @@ public class FileManager {
         }
     }
 
-
-
-public static void DeleteData(String fileName, int type, int idEdit) {
+    public static void DeleteData(String fileName, int type, int idEdit) {
         String separator = "";
         int numero;
         if (type == 0) { //TXT
