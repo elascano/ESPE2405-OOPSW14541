@@ -1,0 +1,6 @@
+1, Lucy, black, true, 0, 10, 28
+2, Moon, White, false, 1, 6, 28
+3, Isabelle, brown, true, 0, 6, 27
+4, Lola, brown and white, false, 0, 3, 27
+6, Princess, Pink, true, 2, 3, 1
+5, jkgk, blue, true, 20, 5, 24
