@@ -1,6 +1,1 @@
-ID: 2
-Name: Chayan
-Color: While
-Age: 50
-Is molting: true
-Born on date: 26/05/2024
+1,july,purple,19,true,Tue May 28 00:37:53 COT 2024,28/05/2024
