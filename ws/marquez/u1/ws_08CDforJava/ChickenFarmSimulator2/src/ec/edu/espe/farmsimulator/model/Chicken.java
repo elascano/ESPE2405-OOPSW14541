@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Jenniffer Marquez, Javasquad, DCCO-ESPE
  */
-public class Chicken {
+public class Chicken implements DateFormatted{
     private int id;
     private String name;
     private String color;
@@ -29,13 +29,17 @@ public class Chicken {
     }
 
     
-    
+    public Date getDateForFilename() {
+        return this.bornOnDate;
+    }
+
     @Override
     public String toString() {
-       SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String formattedDate = dateFormat.format(bornOnDate); 
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + formattedDate + '}';
+        return id + "," + name + "," + color + "," + age + "," + molting + "," + formattedDate;
     }
+
     
     
     
