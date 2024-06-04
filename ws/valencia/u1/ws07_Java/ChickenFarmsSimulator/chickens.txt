@@ -1,0 +1,1 @@
+ID: 1, Name: lucy, Color: black, Age: 12, Molting: true, Born On Date: Tue May 28 10:43:02 ECT 2024
