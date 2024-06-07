@@ -4,6 +4,8 @@
  */
 package ec.edu.espe.farmsimulator.model;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 
@@ -17,9 +19,9 @@ public class Chicken {
     private String color;
     private int age;
     private boolean molting;
-    private Date bornOnDate;
+    private LocalDate bornOnDate;
 
-    public Chicken(int id, String name, String color, int age, boolean molting, Date bornOnDate) {
+    public Chicken(int id, String name, String color, int age, boolean molting, LocalDate bornOnDate) {
         this.id = id;
         this.name = name;
         this.color = color;
@@ -33,7 +35,8 @@ public class Chicken {
     
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return id + ", " + name + ", " + color + ", " + age + ", " + molting + ", " + bornOnDate.format(formatter) ;
     }
 
         
@@ -110,14 +113,14 @@ public class Chicken {
     /**
      * @return the bornOnDate
      */
-    public Date getBornOnDate() {
+    public LocalDate getBornOnDate() {
         return bornOnDate;
     }
 
     /**
      * @param bornOnDate the bornOnDate to set
      */
-    public void setBornOnDate(Date bornOnDate) {
+    public void setBornOnDate(LocalDate bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
     
