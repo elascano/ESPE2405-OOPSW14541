@@ -22,24 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-<<<<<<< HEAD
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2.1/nbproject/private/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2.1/build/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2.1/dist/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/dist/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator1/nbproject/private/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator1/build/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator1/dist/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator/nbproject/private/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator/build/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator/dist/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulatoor2/nbproject/private/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulatoor2/build/
-/ws/ayuquina/u1/ws08FromClassDiagramToCode/ChickenFarmSimulatoor2/dist/
-=======
 
+<<<<<<< HEAD
 /ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
 /ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
 /ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/nbproject/private/
@@ -63,3 +47,5 @@ replay_pid*
 /ws/lisintuña/u1/New Folder/FromClassesToCode/nbproject/private/
 /ws/lisintuña/u1/WS12/FromClassesToCode/nbproject/private/
 /ws/lisintuña/u1/WS12/FromClassesToCode/build/
+=======
+>>>>>>> d181e3bf8aa9af9d3a97f4bd69a07a469a2da0d3
