@@ -1,0 +1,7 @@
+Kenny's Chicken Farm Simulator V 0.5 
+Id : 1 
+Name : Lucy 
+Color : white and brown 
+Age : 0 
+Molting : True 
+borOnDate : None 
