@@ -1,0 +1,1 @@
+Chicken{id=5, color=Dana, name=brown, age=5, molting=true, bornOnDate=Sun May 26 00:00:00 ECT 2024}

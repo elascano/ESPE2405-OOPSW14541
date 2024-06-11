@@ -1,0 +1,7 @@
+1, Lucy, brown, 0, True, <built-in method now of type object at 0x00007FFB596D88E0>
+1, Lucy, brown, 0, True, <built-in method now of type object at 0x00007FFB596D88E0>
+1, Ana, brown, 0, True, <built-in method now of type object at 0x00007FFB596D88E0>
+1, Ana, brown, 0, True, <built-in method now of type object at 0x00007FFB596D88E0>
+1, Mariela, brown, 0, True, <built-in method now of type object at 0x00007FFB596D88E0>
+1, Mariela, brown, 0, True, <built-in method now of type object at 0x00007FFB2ABF88E0>
+1, Mariela, brown, 0, True, <built-in method now of type object at 0x00007FFB2ABF88E0>

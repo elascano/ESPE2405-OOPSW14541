@@ -22,7 +22,37 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 /ws/medina/U1/ws8/AntSimulator/nbproject/private/
 /ws/medina/U1/ws8/AntSimulator/build/
 /ws/medina/U1/ws11Collections/Collections/nbproject/private/
 /ws/medina/U1/ws11Collections/Collections/build/
+=======
+
+<<<<<<< HEAD
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/build/
+
+/hw/villagomez/u1/hw10_ChickenFile/ChickenFarmSimulator2/nbproject/private/
+<<<<<<< HEAD
+/ws/lisintuña/u1/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/build/
+/ws/lisintuña/u1/ws11/Collection/build/
+/ws/lisintuña/u1/ws11/Collection/nbproject/private/
+/ws/lisintuña/u1/ws11/CollectionJava/build/
+/ws/lisintuña/u1/ws11/CollectionJava/nbproject/private/
+/ws/lisintuña/u1/WS11Collection/Collection/build/
+/ws/lisintuña/u1/WS11Collection/Collection/nbproject/private/
+=======
+>>>>>>> 4bc4b8975e8f5c8a929b77bb63347f236ee36ae8
+>>>>>>> 009a7a3412d46b0d8dc42ee4016dbec8e2b75634
+/ws/lisintuña/u1/New Folder/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/build/
+=======
+>>>>>>> d181e3bf8aa9af9d3a97f4bd69a07a469a2da0d3
+>>>>>>> 61f115b63efa2699f3040832f316304d62a653fe
