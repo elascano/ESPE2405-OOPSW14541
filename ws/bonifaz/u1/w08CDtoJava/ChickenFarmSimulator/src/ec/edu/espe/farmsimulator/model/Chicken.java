@@ -1,5 +1,6 @@
-
 package ec.edu.espe.farmsimulator.model;
+
+import com.google.gson.Gson;
 import java.util.Date;
 
 /**
@@ -7,6 +8,7 @@ import java.util.Date;
  * @author Christian Bonifaz, Code Creators, DCCO-ESPE
  */
 public class Chicken {
+
     private int id;
     private String name;
     private String color;
@@ -23,15 +25,27 @@ public class Chicken {
         this.bornOnDate = bornOnDate;
     }
 
-    
-    
     @Override
     public String toString() {
-        return  id + ","+ name + ","+  color + "," +  age + "," + molting + "," + bornOnDate ;
+        return id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
     }
-    
-    
-    
+
+    public String toString(int type) {
+        String chickenData = "";
+        Gson gson = new Gson();
+        if (type == 0) {
+            chickenData = id + ":" + name + ":" + color + ":" + age + ":" + molting + ":" + bornOnDate;
+        }
+        if (type == 1) {
+            chickenData = id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
+        }
+        if (type == 2) {
+            chickenData = gson.toJson(Chicken.this);
+        }
+
+        return chickenData;
+    }
+
     /**
      * @return the id
      */
@@ -115,6 +129,5 @@ public class Chicken {
     public void setBornOnDate(Date bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
-    
-    
+
 }
