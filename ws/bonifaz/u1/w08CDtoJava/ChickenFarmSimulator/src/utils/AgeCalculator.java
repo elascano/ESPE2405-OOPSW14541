@@ -1,4 +1,3 @@
-
 package utils;
 
 import java.time.LocalDate;
@@ -11,6 +10,7 @@ import java.time.format.DateTimeParseException;
  * @author Christian Bonifaz, Code Creators, DCCO-ESPE
  */
 public class AgeCalculator {
+
     public static int AgeCalculator(String bornOnDate) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
@@ -19,10 +19,9 @@ public class AgeCalculator {
             LocalDate currentDate = LocalDate.now();
             return Period.between(birthDate, currentDate).getYears();
         } catch (DateTimeParseException e) {
-            System.out.println("Formato de fecha inválido: " + bornOnDate);
-            return -1; 
+            System.out.println("Invalid date format");
+            return -1;
         }
-    
-    
-    
-}}
+
+    }
+}

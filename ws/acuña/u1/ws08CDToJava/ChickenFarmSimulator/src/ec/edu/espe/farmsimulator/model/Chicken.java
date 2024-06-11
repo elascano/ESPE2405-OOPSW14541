@@ -1,23 +1,20 @@
 package ec.edu.espe.farmsimulator.model;
 
+import com.google.gson.Gson;
 import java.util.Date;
 
 /**
  *
- * @author Marcelo Acuña, Logic Legion, DCCO-ESPE}
+ * @author Marcelo Acuña, Logic Legion, DCCO-ESPE
  */
 public class Chicken {
+
     private int id;
     private String name;
     private String color;
     private int age;
     private boolean molting;
     private Date bornOnDate;
-
-    @Override
-    public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
-    }
 
     public Chicken(int id, String name, String color, int age, boolean molting, Date bornOnDate) {
         this.id = id;
@@ -28,8 +25,27 @@ public class Chicken {
         this.bornOnDate = bornOnDate;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
+    }
+
+    public String toString(int type) {
+        String chickenData = "";
+        Gson gson = new Gson();
+        if (type == 0) {
+            chickenData = id + ":" + name + ":" + color + ":" + age + ":" + molting + ":" + bornOnDate;
+        }
+        if (type == 1) {
+            chickenData = id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
+        }
+        if (type == 2) {
+            chickenData = gson.toJson(Chicken.this);
+        }
+
+        return chickenData;
+    }
+
     /**
      * @return the id
      */
@@ -113,7 +129,5 @@ public class Chicken {
     public void setBornOnDate(Date bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
-    
-    
-    
+
 }

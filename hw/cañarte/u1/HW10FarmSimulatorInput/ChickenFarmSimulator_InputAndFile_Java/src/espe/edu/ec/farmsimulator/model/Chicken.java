@@ -1,7 +1,5 @@
 
 package espe.edu.ec.farmsimulator.model;
-
-
 /**
  * @author Saray Cañarte, codecreators, DCCO - ESPE
  */
@@ -22,17 +20,42 @@ public class Chicken {
         this.bornOnDate = bornOnDate;
     }
     
+ 
     @Override
     public String toString() {
-        return "Chicken{" +"id=" + id +
-                ", name=" + name +
-                ", color=" + color  +
-                ", age=" + age +
-                ", molting=" + molting +
-                ", bornOnDate=" + bornOnDate +
+        return "{" + getId()+
+                ", " + getName() +
+                ", " + getColor()  +
+                ", " + getAge() +
+                ", " + getisMolting()+
+                ", " + getBornOnDate() +
                 '}';
     }
+    public String toString(int type) {
+        String chickenData = "";
+        if (type == 1){
+            chickenData = id +
+                ", " + name +
+                ", " + color  +
+                ", " + age +
+                ", " + molting +
+                ", " + bornOnDate;
+        }
+        
+        if (type ==2){
+            chickenData = "{"
+                + "\"id\":" + id
+                + ", \"name\":\"" + name + '"'
+                + ", \"color\":\"" + color + '"'
+                + ", \"age\":" + age
+                + ", \"molting\":" + molting
+                + ", \"bornOnDate\":\"" + bornOnDate + '"'
+                + '}';
+        }
 
+        return chickenData;
+    }
+  
     /**
      * @return the id
      */
@@ -89,7 +112,7 @@ public class Chicken {
     /**
      * @return the molting
      */
-    public boolean isMolting() {
+    public boolean getisMolting() {
         return molting;
     }
     /**
