@@ -22,3 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/medina/U1/ws8/AntSimulator/nbproject/private/
+/ws/medina/U1/ws8/AntSimulator/build/
+/ws/medina/U1/ws11Collections/Collections/nbproject/private/
+/ws/medina/U1/ws11Collections/Collections/build/
