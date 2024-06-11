@@ -22,6 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
+/ws/medina/U1/ws8/AntSimulator/nbproject/private/
+/ws/medina/U1/ws8/AntSimulator/build/
+/ws/medina/U1/ws11Collections/Collections/nbproject/private/
+/ws/medina/U1/ws11Collections/Collections/build/
+=======
 
 <<<<<<< HEAD
 /ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
@@ -49,9 +55,19 @@ replay_pid*
 /ws/lisintuña/u1/WS12/FromClassesToCode/build/
 =======
 >>>>>>> d181e3bf8aa9af9d3a97f4bd69a07a469a2da0d3
+<<<<<<< HEAD
 /hw/cedenor/U1/HOMEWORK/WS13Taxes/nbproject/private/
 /hw/cedenor/U1/HOMEWORK/WS13Taxes/build/
 /hw/cedenor/U1/HOMEWORK/ShoppingCenter/nbproject/private/
 /hw/cedenor/U1/HOMEWORK/WS13Taxes/dist/
 /hw/cedenor/U1/HOMEWORK/ShoppingCenter/build/
 /hw/cedenor/U1/HOMEWORK/ShoppingCenter/dist/
+=======
+>>>>>>> 61f115b63efa2699f3040832f316304d62a653fe
+/ws/arboleda/u1/W13Library/Taxes/nbproject/private/
+/ws/arboleda/u1/W13Library/Taxes/build/
+/ws/arboleda/u1/W13Library/Taxes/dist/
+/ws/arboleda/u1/W13Library/ShoppingCenter/nbproject/private/
+/ws/arboleda/u1/W13Library/ShoppingCenter/build/
+/ws/arboleda/u1/W13Library/ShoppingCenter/dist/
+>>>>>>> 60d0f5850a9ed526431e83026a065d3756ebe5bf
