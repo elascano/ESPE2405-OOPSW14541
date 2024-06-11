@@ -1,30 +1,40 @@
 package ec.edu.espe.chickenfarmsimlator.model;
-import java.util.Date;
+
+import java.time.LocalDate;
+import java.time.Period;
 
 /**
  *
  * @author Danny Ayuquina, LogicLegion, DCCO-ESPE
  */
 public class Chicken {
-        private int id;
-        private String name;
-        private String color;
-        private int age;
-        private boolean molting;
-        private Date bornOnDate;
-
-    public Chicken(int id, String name, String color, int age, boolean molting, Date bornOnDate) {
+    
+    private int id;
+    private String name;
+    private String color;
+    private int age;
+    private boolean molting;
+    private LocalDate bornOnDate;
+    
+    public Chicken(int id, String name, String color, boolean molting, LocalDate bornOnDate) {
         this.id = id;
         this.name = name;
         this.color = color;
-        this.age = age;
+        this.age = computeAge(bornOnDate);
         this.molting = molting;
         this.bornOnDate = bornOnDate;
     }
-
+    
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
+        return "{"
+                + "\"id\":" + id
+                + ", \"name\":\"" + name + '"'
+                + ", \"color\":\"" + color + '"'
+                + ", \"age\":" + age
+                + ", \"molting\":" + molting
+                + ", \"bornOnDate\":\"" + bornOnDate + '"'
+                + "}";
     }
 
     /**
@@ -100,15 +110,22 @@ public class Chicken {
     /**
      * @return the bornOnDate
      */
-    public Date getBornOnDate() {
+    public LocalDate getBornOnDate() {
         return bornOnDate;
     }
 
     /**
      * @param bornOnDate the bornOnDate to set
      */
-    public void setBornOnDate(Date bornOnDate) {
+    public void setBornOnDate(LocalDate bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
-        
+
+    //Methods
+    private int computeAge(LocalDate bornOnDate) {
+        LocalDate now = LocalDate.now();
+        Period period = Period.between(bornOnDate, now);
+        return (period.getYears());
+    }
+    
 }
