@@ -6,6 +6,7 @@ import static taxes.Income.computeIR;
  *
  * @author Marcelo Acuña, Logic Legion, DCCO-ESPE
  */
+
 public class IncomeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
