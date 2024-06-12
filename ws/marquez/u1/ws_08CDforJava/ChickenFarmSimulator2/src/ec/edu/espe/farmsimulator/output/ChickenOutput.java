@@ -13,19 +13,22 @@ import java.text.SimpleDateFormat;
  * @author Jenniffer Marquez, Javasquad, DCCO-ESPE
  */
 public class ChickenOutput {
-    public static void saveChickenToFile(Chicken chicken, String filename) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+    public static void saveChickenToFile(Chicken chicken) {
+        Filemaneger.save(chicken);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
         String formattedDate = dateFormat.format(chicken.getBornOnDate());
-        
+        String filename = "chicken_" + chicken.getId() + "_" + formattedDate + ".txt";
+
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-            writer.println("ID: " + chicken.getId());
-            writer.println("Name: " + chicken.getName());
-            writer.println("Color: " + chicken.getColor());
-            writer.println("Age: " + chicken.getAge());
-            writer.println("Is molting: " + chicken.isMolting());
-            writer.println("Born on date: " + formattedDate);
+            writer.print(chicken);
+            /*writer.print("Name: " + chicken.getName());
+            writer.print("Color: " + chicken.getColor());
+            writer.print("Age: " + chicken.getAge());
+            writer.print("Is molting: " + chicken.isMolting());
+            writer.print("Born on date: " + formattedDate);*/
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Error: Unable to save chicken information to file: " + e.getMessage());
+            // Aquí puedes agregar un código adicional para manejar la excepción según los requisitos de tu aplicación.
         }
     }
 }
