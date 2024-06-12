@@ -11,14 +11,14 @@ import Taxes.Sales;
  *
  * @author Simone Medina, JavaSquad, DCCO-ESPE
  */
-public class CellPhone1 {
+public class Sweater {
     private int id;
     private String color;
     private String brand;
     private float basePrice;
     private float Pvp;
 
-    public CellPhone1(int id, String color, String brand, float basePrice) {
+    public Sweater(int id, String color, String brand, float basePrice) {
         this.id = id;
         this.color = color;
         this.brand = brand;
@@ -98,7 +98,7 @@ public class CellPhone1 {
      * @param Pvp the Pvp to set
      */
     public void setPvp() {
-        this.Pvp = basePrice +Sales.computeIva(15.0F,100);
+        this.Pvp = basePrice +Sales.computeIva(15.0F,10);
     }
 
    
