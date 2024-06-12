@@ -14,9 +14,9 @@ public class Ws13ShoppingCenter {
     public static void main(String[] args) {
         float totalPrice;
         CellPhone cellPhone = new CellPhone(001, "Samsung", "white", 150.00F);
-        
+
         System.out.println(cellPhone);
-        
+
     }
-    
+
 }
