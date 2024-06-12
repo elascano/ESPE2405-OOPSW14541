@@ -1,21 +1,18 @@
-
 package taxes;
 
 /**
  *
- * @author Marcelo Acuña, LogicLegion
+ * @author Marcelo Acuña, Logic Legion, DCCO-ESPE
  */
 public class Sales {
-
-    public static float computeIva(float taxPercentage, float baseAmount) {
+    public static float computeIva(float taxPercentage, float baseAmount){
         float iva;
         iva = baseAmount * taxPercentage / 100;
         return iva;
     }
-
-    public static float computeIva() {
-        return 0.0F;
-
+    
+    public static float computeIce(){
+     //TODO
+     return 0.0F;
     }
-
 }
