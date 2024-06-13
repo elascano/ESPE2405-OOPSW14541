@@ -22,6 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 /ws/gavilanez/u1/ws08CDforJava/ChickenFarmSimulator/nbproject/private/
 /ws/gavilanez/u1/ws08CDforJava/ChickenFarmSimulator/dist/
 /ws/gavilanez/u1/ws08CDforJava/ChickenFarmSimulator2/nbproject/private/
@@ -36,3 +37,48 @@ replay_pid*
 /ws/gavilanez/u1/ws12/FromClassestoCode/nbproject/private/
 /ws/gavilanez/u1/ws12/FromClassestoCode/build/
 /ws/gavilanez/u1/ws10CDfileManager/ws10ChickenFarmSimulator/nbproject/private/
+=======
+
+<<<<<<< HEAD
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/build/
+
+/hw/villagomez/u1/hw10_ChickenFile/ChickenFarmSimulator2/nbproject/private/
+<<<<<<< HEAD
+/ws/lisintuña/u1/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/build/
+/ws/lisintuña/u1/ws11/Collection/build/
+/ws/lisintuña/u1/ws11/Collection/nbproject/private/
+/ws/lisintuña/u1/ws11/CollectionJava/build/
+/ws/lisintuña/u1/ws11/CollectionJava/nbproject/private/
+/ws/lisintuña/u1/WS11Collection/Collection/build/
+/ws/lisintuña/u1/WS11Collection/Collection/nbproject/private/
+=======
+>>>>>>> 4bc4b8975e8f5c8a929b77bb63347f236ee36ae8
+>>>>>>> 009a7a3412d46b0d8dc42ee4016dbec8e2b75634
+/ws/lisintuña/u1/New Folder/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/build/
+=======
+>>>>>>> d181e3bf8aa9af9d3a97f4bd69a07a469a2da0d3
+>>>>>>> 7955840a4935df1a4ded72146d7a79d2eda9e213
+/ws/gavilanez/u1/New Folder/Taxes/nbproject/private/
+/ws/gavilanez/u1/New Folder/Taxes/build/
+/ws/gavilanez/u1/New Folder/Taxes/dist/
+/ws/gavilanez/u1/ws14libs/ShoppingCenter/nbproject/private/
+/ws/gavilanez/u1/ws14Libs/Taxes/build/
+/ws/gavilanez/u1/ws14Libs/Taxes/nbproject/private/
+/ws/gavilanez/u1/ws14libs/Taxes/dist/
+/ws/gavilanez/u1/ws14Libs/Taxes/dist/
+/ws/gavilanez/u1/ws14Libs/ShoppingCenter/nbproject/private/
+/ws/gavilanez/u1/ws14Libs/ShoppingCenter/build/
+/ws/gavilanez/u1/ws14Libs/ShoppingCenter/dist/
+/hw/gavilanez/u1/hw11/ObjectBicycle/nbproject/private/
+/hw/gavilanez/u1/hw11/ObjectBicycle/build/
+/hw/gavilanez/u1/hw11/ObjectBicycle/dist/
+/ws/gavilanez/u1/ws15ReferencedDT/ReferencedDT/nbproject/private/
+/ws/gavilanez/u1/ws15ReferencedDT/ReferencedDT/build/

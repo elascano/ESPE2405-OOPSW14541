@@ -1,32 +1,47 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.farmsimulator.view;
 
 import ec.edu.espe.farmsimulator.model.Chicken;
+import ec.edu.espe.farmsimulator.input.ChickenInput;
+import ec.edu.espe.farmsimulator.output.ChickenOutput;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
+
 /**
  *
  * @author Jenniffer Marquez, Javasquad, DCCO-ESPE
  */
 public class FarmSimulator {
     public static void main(String[] args) {
-        System.out.println("Jenniffer's Chicken Farm Simulator V 0.5");
-        Chicken chicken =new Chicken(1,"Lucy","white and bronw", 0, true, new Date());
-        System.out.println("Chicken---> \n" + chicken);
+        System.out.println("Jenniffer Chicken Farm Simulator V 0.5 ");
+
+        Chicken chicken = ChickenInput.enterChickenData();
+
+        ChickenOutput.saveChickenToFile(chicken);
+
+        System.out.println("Chicken --> \n" + chicken);
         
-        int id = 2;
-        String name = "Maruja";
-        String color = "black";
-        int age = 1;
-        boolean molting = false;
-        Date bornOnDate = new Date ();
+        Short minuend; 
+        short subtrahend;
+        short difference;
+    
+        minuend=(short)70000;
+        System.out.println(minuend);
         
-        chicken = new Chicken (id, name, color, age, molting, bornOnDate);
-        System.out.println("Chicken 2 --> \n" + chicken);
+        float addend1=1.2F;
+        float addend2=2.4F;
+        float sum;
+        sum=addend1+addend2;
+        System.out.println(sum);
         
+        char vowell='5';
+        subtrahend=(short)vowell;
+       difference=(short)(minuend-subtrahend);
+        System.out.println(subtrahend);
         
+        System.out.println(difference);
     }
     
 }
