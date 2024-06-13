@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.farmsimulator.model;
+
+import com.google.gson.Gson;
 import java.util.Date;
 
 /**
@@ -10,6 +8,7 @@ import java.util.Date;
  * @author Christian Bonifaz, Code Creators, DCCO-ESPE
  */
 public class Chicken {
+
     private int id;
     private String name;
     private String color;
@@ -26,15 +25,27 @@ public class Chicken {
         this.bornOnDate = bornOnDate;
     }
 
-    
-    
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", bornOnDate=" + bornOnDate + '}';
+        return id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
     }
-    
-    
-    
+
+    public String toString(int type) {
+        String chickenData = "";
+        Gson gson = new Gson();
+        if (type == 0) {
+            chickenData = id + ":" + name + ":" + color + ":" + age + ":" + molting + ":" + bornOnDate;
+        }
+        if (type == 1) {
+            chickenData = id + "," + name + "," + color + "," + age + "," + molting + "," + bornOnDate;
+        }
+        if (type == 2) {
+            chickenData = gson.toJson(Chicken.this);
+        }
+
+        return chickenData;
+    }
+
     /**
      * @return the id
      */
@@ -118,6 +129,5 @@ public class Chicken {
     public void setBornOnDate(Date bornOnDate) {
         this.bornOnDate = bornOnDate;
     }
-    
-    
+
 }

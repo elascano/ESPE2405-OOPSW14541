@@ -1,0 +1,8 @@
+{
+    "name": "chicken-farm-simulator",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "node ec.edu.espe.farmsimulator.view/chickenFarmSimulator.js"
+    }
+}

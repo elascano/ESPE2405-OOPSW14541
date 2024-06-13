@@ -4,36 +4,46 @@
  */
 package ec.edu.espe.farmsimulator.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
  *
  * @author Jenniffer Marquez, Javasquad, DCCO-ESPE
  */
-public class Chicken {
+public class Chicken implements DateFormatted{
     private int id;
     private String name;
     private String color;
     private int age;
     private boolean molting;
-    private Date borOnDate;
+    private Date bornOnDate;
 
-    public Chicken(int id, String name, String color, int age, boolean molting, Date borOnDate) {
+    public Chicken(int id, String name, String color, int age, boolean molting, Date bornOnDate) {
         this.id = id;
         this.name = name;
         this.color = color;
         this.age = age;
         this.molting = molting;
-        this.borOnDate = borOnDate;
+        this.bornOnDate = bornOnDate;
+    }
+
+    
+    public Date getDateForFilename() {
+        return this.bornOnDate;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String formattedDate = dateFormat.format(bornOnDate); 
+        return id + "," + name + "," + color + "," + age + "," + molting + "," + formattedDate;
     }
 
     
     
-    @Override
-    public String toString() {
-        return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + age + ", molting=" + molting + ", borOnDate=" + borOnDate + '}';
-    }
     
+
     /**
      * @return the id
      */
@@ -105,18 +115,19 @@ public class Chicken {
     }
 
     /**
-     * @return the borOnDate
+     * @return the BornOnDate
      */
-    public Date getBorOnDate() {
-        return borOnDate;
+    public Date getBornOnDate() {
+        return bornOnDate;
     }
 
     /**
-     * @param borOnDate the borOnDate to set
+     * @param bornOnDate the bornOnDate to set
      */
-    public void setBorOnDate(Date borOnDate) {
-        this.borOnDate = borOnDate;
+    public void setBornOnDate(Date bornOnDate) {
+        this.bornOnDate = bornOnDate;
     }
+    
     
     
     

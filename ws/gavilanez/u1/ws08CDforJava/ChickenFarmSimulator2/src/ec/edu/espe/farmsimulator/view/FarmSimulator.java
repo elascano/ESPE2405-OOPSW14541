@@ -52,24 +52,6 @@ public class FarmSimulator {
         Chicken chicken = new Chicken(id, name, color, molting, year, month, day);
         validOption = DateValidator.getValidOption();
         FileManager.save(chicken.toString(1),"chicken",1);
-        Short minuend;
-        short subtrahend;
-        short difference;
-    
-        minuend = (short)70000;
-        System.out.println(minuend);
-    
-        float addend1 = 1.2F;
-        float addend2 = 2.4F;
-        float sum;
-        sum = addend1 + addend2;
-        System.out.println(sum);
-        
-        char vowell ='5';
-        subtrahend = (short)vowell;
-        difference = (short)(minuend-subtrahend);
-        System.out.println(subtrahend);
-        
-        System.out.println(difference);  
+          
     }
 }
