@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.shipping.view;
 
 import ec.edu.espe.shipping.model.Cellphone;
+import taxes.Income;
+import taxes.Sales;
 
 /**
  *
  * @author Danny Ayuquina, LogicLegion, DCCO-ESPE
  */
-public class ShippingCenter {
+public class ShoppingCenter {
 
     public static void main(String[] args) {
         float totalPrice;
         Cellphone cellphone;
+        System.out.println("Salario final: "+Income.computeIR(1000));
 
         cellphone = new Cellphone(0, "motorola", "black", 2000.0F);
         System.out.println(cellphone);
