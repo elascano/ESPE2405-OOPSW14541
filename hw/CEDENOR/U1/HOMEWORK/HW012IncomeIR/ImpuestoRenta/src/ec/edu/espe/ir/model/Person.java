@@ -8,7 +8,7 @@ import IR.IR.ImpuestoRenta;
 
 /**
  *
- * @author Nahomi Cedeno
+ * @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
  */
 public class Person {
     private String nombre;

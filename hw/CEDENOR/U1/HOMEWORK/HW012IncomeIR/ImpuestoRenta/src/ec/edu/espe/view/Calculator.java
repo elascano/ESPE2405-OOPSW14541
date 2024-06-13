@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Nahomi Cedeno
+ * @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
  */
 public class Calculator {
 
