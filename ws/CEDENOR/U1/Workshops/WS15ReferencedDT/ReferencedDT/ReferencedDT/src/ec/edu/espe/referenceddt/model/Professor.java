@@ -3,7 +3,7 @@ package ec.edu.espe.referenceddt.model;
 
 /**
  *
- *  * @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
+* @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
  */
 public class Professor {
     private int id;
