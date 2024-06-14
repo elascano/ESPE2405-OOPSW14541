@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Saray Cañarte, codecreators, DCCO - ESPE
+* @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
  */
 public class FileManager {
     public static void save(String data, String fileName, int type) {
