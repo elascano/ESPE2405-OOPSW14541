@@ -98,7 +98,7 @@ public class CellPhone1 {
      * @param Pvp the Pvp to set
      */
     public void setPvp() {
-        this.Pvp = basePrice +Sales.computeIva(15.0F,1000);
+        this.Pvp = basePrice +Sales.computeIva(15.0F,100);
     }
 
    

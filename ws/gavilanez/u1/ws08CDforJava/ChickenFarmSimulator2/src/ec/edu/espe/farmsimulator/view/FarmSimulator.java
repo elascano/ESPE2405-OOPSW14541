@@ -2,10 +2,15 @@
 package ec.edu.espe.farmsimulator.view;
 
 import ec.edu.espe.farmsimulator.model.Chicken;
-import java.util.Date;
+import utils.FileManager;
+import utils.DateValidator;
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.Period;
+
 /**
  *
- * @author Kenny Gavilanez, The Javas, DCCO-ESPE
+ * @author Kenny Gavilanez, Dev Dynasty, DCCO-ESPE
  */
 public class FarmSimulator {
 
@@ -13,19 +18,40 @@ public class FarmSimulator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         System.out.println("Kenny's Chicken Farm Simulator V 0.5");
-        Chicken chicken = new Chicken(1, "Lucy", "White and brown",0, true, new Date());
-        System.out.println("Chicken ---> \n" + chicken);
         
-        int id=2;
-        String name="Maruja";
-        String color="black";
-        int age=1;
-        boolean molting = false;
-        Date bornOnDate = new Date();
+        int id;
+        int validOption;
+        String name;
+        String color;
+        int age;
+        boolean molting;
         
-        chicken = new Chicken(id, name, color, age, molting, bornOnDate);
-        System.out.println("Chicken 2 ---> \n" + chicken);
+        System.out.println("Enter chicken Id: ");
+        id = scan.nextInt();
+        scan.nextLine();
+        
+        System.out.println("Enter chicken Name: ");
+        name = scan.nextLine();
+        
+        System.out.println("Enter chicken Color: ");
+        color = scan.nextLine();
+        
+        System.out.println("Chicken is molting?: ");
+        molting =scan.nextBoolean();
+        
+        LocalDate birthDate = DateValidator.getValidDate();
+        LocalDate currentDate = LocalDate.now();
+        
+        Period period = Period.between(birthDate, currentDate);
+        int year = period.getYears();
+        int month = period.getMonths();
+        int day = period.getDays();
+        
+        Chicken chicken = new Chicken(id, name, color, molting, year, month, day);
+        validOption = DateValidator.getValidOption();
+        FileManager.save(chicken.toString(1),"chicken",1);
+          
     }
-    
 }
