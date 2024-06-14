@@ -8,7 +8,7 @@ import ec.edu.espe.shopping.model.CellPhone;
 
 /**
  *
- * @author Christian Acuña, Logic Legion, DCCO-ESPE
+ * @author Abner Arboleda, Logic Legion, DCCO-ESPE
  */
 public class ShoppingCenter {
     public static void main(String[] args) {
