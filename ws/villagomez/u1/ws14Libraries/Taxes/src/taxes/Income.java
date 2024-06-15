@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package taxes;
 
 /**
@@ -10,30 +6,36 @@ package taxes;
  */
 public  class Income {
     public static float computeIR(float salary){
-        float totalSalary;
+        float totalAnualSalary;
+        float totalMonthlySalary;
+        float irTaxPerYear;
+        float irTaxPerMonth;
         float anualSalary = salary * 12;
         
-        if (anualSalary >=0 && anualSalary < 11722){
-            totalSalary = salary;
-        } else if (anualSalary >= 11722.00 && anualSalary < 14930.00){
-            totalSalary = (salary - (salary*0.05F));
-        }else if (anualSalary >= 14930.00 && anualSalary < 19385.00){
-            totalSalary = (salary - (salary * 0.10F));
-        }else if (anualSalary >= 19385.00 && anualSalary < 25638.00){
-            totalSalary = (salary - (salary * 0.12F));
-        }else if (anualSalary >= 25638.00 && anualSalary < 33738.00){
-            totalSalary = (salary - (salary * 0.15F));
-        }else if (anualSalary >= 33738.00 && anualSalary < 44721.00){
-            totalSalary = (salary - (salary * 0.20F));
-        }else if (anualSalary >= 44721.00 && anualSalary < 59537.00){
-            totalSalary = (salary - (salary * 0.25F));
-        }else if (anualSalary >= 59537.00 && anualSalary < 79388.00){
-            totalSalary = (salary - (salary * 0.30F));
-        }else if (anualSalary >= 79388.00 && anualSalary < 105580.00){
-            totalSalary = (salary - (salary * 0.35F));
+        if (anualSalary >=0 && anualSalary < 11902){
+            irTaxPerYear = 0;
+        } else if (anualSalary >= 11902.00 && anualSalary < 15159.00){
+            irTaxPerYear = ((anualSalary - 11902F)*0.05F);
+        }else if (anualSalary >= 15159.00 && anualSalary < 19682.00){
+            irTaxPerYear = (((anualSalary - 15159) * 0.10F)+163);
+        }else if (anualSalary >= 19682.00 && anualSalary < 26031.00){
+            irTaxPerYear = (((anualSalary - 19682) * 0.12F)+615);
+        }else if (anualSalary >= 26031.00 && anualSalary < 34255.00){
+            irTaxPerYear = (((anualSalary - 26031) * 0.10F)+1377);
+        }else if (anualSalary >= 34255.00 && anualSalary < 45407.00){
+            irTaxPerYear = (((anualSalary - 34255) * 0.10F)+2611);
+        }else if (anualSalary >= 45407.00 && anualSalary < 60450.00){
+            irTaxPerYear = (((anualSalary - 45407) * 0.10F)+4841);
+        }else if (anualSalary >= 60450.00 && anualSalary < 80605.00){
+            irTaxPerYear = (((anualSalary - 60450) * 0.10F)+8602);
+        }else if (anualSalary >= 80605.00 && anualSalary < 107199.00){
+            irTaxPerYear = (((anualSalary - 80605) * 0.10F)+14648);
         } else {
-            totalSalary = (salary - (salary * 0.37F));
+            irTaxPerYear = (((anualSalary - 107199) * 0.10F)+23956);
         } 
-        return totalSalary;
+        
+        
+        return irTaxPerYear;
     }
+    
 }

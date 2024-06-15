@@ -1,14 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.musicstudio.model;
 
+import java.io.Serializable;
 /**
  *
  * @author Doménica Villagómez, CommitCrew, DCCO-ESPE
  */
-public class MusicalInstrument {
+public class MusicalInstrument implements Serializable{
+     private static final long serialVersionUID = 1L;
+    
     private int id;
     private String name;
     private String type;

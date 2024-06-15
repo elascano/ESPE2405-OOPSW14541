@@ -13,7 +13,7 @@ public class ShoppingCenter {
     public static void main(String[] args) {
         float totalPrice;
         Cellphone cellphone;
-        System.out.println("Salario final: "+Income.computeIR(1000));
+        System.out.println("Salario final: "+Income.computeIR(2000));
 
         cellphone = new Cellphone(0, "motorola", "black", 2000.0F);
         System.out.println(cellphone);

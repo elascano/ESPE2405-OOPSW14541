@@ -1,0 +1,11 @@
+1:Black:Lucy:2023/11/30:true:0:5:29
+3:Brown and white:Lola:2021/5/16:true:3:0:14
+4:White:Lua:2022/10/31:true:1:6:30
+7:White:Oberon:2023/11/30:false:0:6:4
+2:Grey:Nyx:2023/10/30:true:0:7:4
+8:Blue:Volt:2022/11/30:false:1:6:4
+5:Grey:Mag:2020/5/26:true:4:0:8
+9:Orange:Ivara:2021/9/30:true:2:8:4
+6:Brown:Voruna:2023/10/16:false:0:7:18
+10:White:Excalibur:2020/2/15:true:4:3:19
+11:Grey:Loki:2023/8/20:false:0:9:14
