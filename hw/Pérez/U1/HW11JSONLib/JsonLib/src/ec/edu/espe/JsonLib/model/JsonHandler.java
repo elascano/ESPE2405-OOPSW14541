@@ -19,7 +19,7 @@ public class JsonHandler<T> {
     public JsonHandler(String filePath, Class<T> clazz) {
         this.filePath = filePath;
         this.listType = TypeToken.getParameterized(List.class, clazz).getType();
-        this.gson = new GsonBuilder().setPrettyPrinting().create(); // Configurar Gson para pretty printing
+        this.gson = new GsonBuilder().setPrettyPrinting().create(); 
     }
 
     public List<T> readJson() {
