@@ -12,7 +12,7 @@ public class TaxCalculator {
     public static double Taxiess(double mensualincome){
         
         
-        return (mensualincome*12) * 0.0945;
+        return (mensualincome*12) * 0.0945F;
     }
     
     public static double Tax (double mensualincome,List<Section> sections ){
