@@ -1,0 +1,3 @@
+{"id":1, "name":"David", "color":"red", "age":19, "molting":true, "bornOnDate":"12/12/2004"}
+{"id":1, "name":"David", "color":"black", "age":19, "molting":false, "bornOnDate":"12/12/2004"}
+{"id":2, "name":"Danny", "color":"red", "age":18, "molting":false, "bornOnDate":"12/11/2005"}
