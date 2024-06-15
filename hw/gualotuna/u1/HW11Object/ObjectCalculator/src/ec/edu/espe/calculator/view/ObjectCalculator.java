@@ -4,6 +4,7 @@
  */
 package ec.edu.espe.calculator.view;
 import ec.edu.espe.calculator.model.Calculator;
+
 /**
  *
  * @author Brayan Gualotuña, Dev Dynasty, DCCO-ESPE
@@ -15,5 +16,7 @@ public class ObjectCalculator {
         Calculator calculator = new Calculator(1, "Casio", "fx-570", 1000);
         
         System.out.println("calculator ---> " + calculator);
+        
+        taxes.SaveObject.saveObjects(calculator, "calculator.ser");
     }
 }
