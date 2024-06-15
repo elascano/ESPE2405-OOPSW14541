@@ -33,6 +33,17 @@ public class Chicken {
     }
     public String toString(int type) {
         String chickenData = "";
+           if (type == 0){
+            chickenData ="{"
+                + "id =" + id
+                + ", name = " + name 
+                + ", color = " + color
+                + ", age =" + age
+                + ", molting = " + molting
+                + ", bornOnDate =" + bornOnDate 
+                + '}';
+            
+        }
         if (type == 1){
             chickenData = id +
                 ", " + name +
