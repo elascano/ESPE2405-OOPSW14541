@@ -19,7 +19,7 @@ public class ShoppingCenter {
         
         System.out.println("Celular: " + cellphone);
         
-        float hey =  taxes.Income.computeIR(1500);
-        System.out.println("El salario es: " + hey);
+        float taxPerYear =  taxes.Income.computeIR(1500);
+        System.out.println("Impuesto anual es " + taxPerYear);
     }
 }
