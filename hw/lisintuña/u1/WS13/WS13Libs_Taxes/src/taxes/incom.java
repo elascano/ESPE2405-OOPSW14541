@@ -6,7 +6,7 @@ package taxes;
 
 /**
  *
- * @author Eduardo Segarra, TheJavaBandits, DCCO-ESPE
+ * @,TheJavaBandits, DCCO-ESPE
  */
 public class incom {
     public static float computeIR(float salary){
