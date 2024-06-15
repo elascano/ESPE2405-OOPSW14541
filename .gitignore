@@ -20,25 +20,4 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
 
-/ws/cañarte/u1/WS14Libs/Taxes/nbproject/private/
-/ws/cañarte/u1/WS14Libs/Taxes/build/
-/ws/cañarte/u1/WS14Libs/Taxes/dist/
-/ws/cañarte/u1/WS14Libs/ShoppingCenter/nbproject/private/
-/ws/cañarte/u1/WS14Libs/ShoppingCenter/build/
-/ws/cañarte/u1/WS14Libs/ShoppingCenter/dist/
-/hw/cañarte/u1/HW11ObjectInFile/Songs/nbproject/private/
-/hw/cañarte/u1/HW11ObjectInFile/SongPlaylist/nbproject/private/
-/hw/cañarte/u1/HW11ObjectInFile/Songs/build/
-/hw/cañarte/u1/HW11ObjectInFile/Songs/dist/
-/hw/cañarte/u1/HW11ObjectInFile/ObjectLib/nbproject/private/
-/hw/cañarte/u1/HW11ObjectInFile/ObjectLib/build/
-/hw/cañarte/u1/HW11ObjectInFile/ObjectLib/dist/
-/hw/cañarte/u1/HW11ObjectInFile/SongPlaylist/build/
-/hw/cañarte/u1/HW11ObjectInFile/SongPlaylist/dist/
-/ws/cañarte/u1/WS15ReferenceDataTypes/WS15ReferenceDataTypes/nbproject/private/
-/ws/cañarte/u1/WS15ReferenceDataTypes/WS15ReferenceDataTypes/build/
-/hw/cañarte/u1/HW12ComputeIR/IRCalculator/nbproject/private/
-/hw/cañarte/u1/HW12ComputeIR/IRCalculator/build/
