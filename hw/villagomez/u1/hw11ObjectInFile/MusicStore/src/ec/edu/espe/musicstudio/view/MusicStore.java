@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.musicstudio.view;
 
 import ec.edu.espe.musicstudio.model.MusicalInstrument;
@@ -15,6 +11,8 @@ public class MusicStore {
         MusicalInstrument musicalInstrument;
         
         musicalInstrument = new MusicalInstrument(1, "Guitar", "Acoustic", "Medium");
+        
+        ObjectLib.ObjectManager.saveObject(musicalInstrument);
         
         System.out.println("Musical Instrument ---> "+musicalInstrument);
     }
