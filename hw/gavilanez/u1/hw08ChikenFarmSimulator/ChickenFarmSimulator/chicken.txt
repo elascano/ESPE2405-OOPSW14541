@@ -4,4 +4,3 @@
 3, dory, black, true, 1, 2, 24
 1, lily, blue, true, 0, 11, 20
 1, lily, black, false, 1, 5, 20
-6, Lily, brown, false, 1, 5, 21
