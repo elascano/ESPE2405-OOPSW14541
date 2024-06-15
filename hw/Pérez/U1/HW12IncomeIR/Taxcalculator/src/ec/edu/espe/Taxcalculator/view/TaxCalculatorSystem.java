@@ -27,16 +27,18 @@ public class TaxCalculatorSystem {
           sections.add(new Section(80605, 107199, 14648, 0.35F));
           sections.add(new Section(107199, Double.POSITIVE_INFINITY, 23956, 0.37F));
           
-          System.out.println("Enter your annual salary:");
-          double annualincome = scanner.nextDouble();
+          System.out.println("Enter your mensual salary:");
+          double mensualincome = scanner.nextDouble();
+          double iess = TaxCalculator.Taxiess(mensualincome);
+          double annualincome = (mensualincome * 12) - iess;
           double tax=TaxCalculator.Tax(annualincome,sections);
-          double salary=annualincome-tax;
           System.out.println("Your annual tax is " + tax);
-          System.out.println("Your salary is " + salary);
+
           
           
           
       }
+      
     
       
 }
