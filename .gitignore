@@ -20,16 +20,8 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-<<<<<<< HEAD
-hs_err_pid*
-replay_pid*
-<<<<<<< HEAD
-/ws/medina/U1/ws8/AntSimulator/nbproject/private/
-/ws/medina/U1/ws8/AntSimulator/build/
-/ws/medina/U1/ws11Collections/Collections/nbproject/private/
-/ws/medina/U1/ws11Collections/Collections/build/
-=======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
 /ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
@@ -103,3 +95,5 @@ replay_pid*
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/nbproject/private/
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/build/
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/dist/
+=======
+>>>>>>> 39214f64e14c1eddbf1e2da78a5ebec8f0ec387e
