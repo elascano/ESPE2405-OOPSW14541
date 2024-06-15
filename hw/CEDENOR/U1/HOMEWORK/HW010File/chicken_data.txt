@@ -1,0 +1,6 @@
+ID: 1545
+Name: billy
+Color: yellow
+Age: 0
+Molting: true
+Born on Date: 21/05/2024
