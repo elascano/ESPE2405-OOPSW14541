@@ -1,0 +1,1 @@
+Chicken{id=1, name=David, color=black, age=19, molting=false, bornOnDate=2004-12-12 00:00:00}
