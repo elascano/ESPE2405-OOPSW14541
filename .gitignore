@@ -21,3 +21,5 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 
+/ws/arboleda/u1/WS15ReferenceDt/PrimitiveData/nbproject/private/
+/ws/arboleda/u1/WS09PrimitiveData/PrimitiveData/build/
