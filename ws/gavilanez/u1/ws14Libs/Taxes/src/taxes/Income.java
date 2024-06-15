@@ -10,60 +10,49 @@ package taxes;
  */
 public class Income {
     public float computeIR(float salary){
-        //Todo 
-        float fraccionBasica;
-        float impuestoFB;
-        float impuestoFE;
-        float impuestoTotal;
-        float salaryA;
+        float anualSalary = salary * 12;
+        float userIESSApport = anualSalary * 9.45F/100F;
+        float taxableBase = anualSalary - userIESSApport;
         
-        salaryA = salary * 12;
-        
-        
-        if (salaryA >= 0 && salaryA < 11902) {
-            fraccionBasica = 0;
-            impuestoFB = 0;
-            impuestoFE = 0;
-        } else if (salaryA < 15159) {
-            fraccionBasica = 11902;
-            impuestoFB = 0;
-            impuestoFE = 0.05F;
-        } else if (salaryA < 19682) {
-            fraccionBasica = 15159;
-            impuestoFB = 163;
-            impuestoFE = 0.10F;
-        } else if (salaryA < 26031) {
-            fraccionBasica = 19682;
-            impuestoFB = 615;
-            impuestoFE = 0.12F;
-        } else if (salaryA < 34255) {
-            fraccionBasica = 26031;
-            impuestoFB = 1377;
-            impuestoFE = 0.15F;
-        } else if (salaryA < 45407) {
-            fraccionBasica = 34255;
-            impuestoFB = 2611;
-            impuestoFE = 0.20F;
-        } else if (salaryA < 60450) {
-            fraccionBasica = 45407;
-            impuestoFB = 4841;
-            impuestoFE = 0.25F;
-        } else if (salaryA < 80605) {
-            fraccionBasica = 60450;
-            impuestoFB = 8602;
-            impuestoFE = 0.30F;
-        } else if (salaryA < 107199) {
-            fraccionBasica = 80605;
-            impuestoFB = 14648;
-            impuestoFE = 0.35F;
-        } else {
-            fraccionBasica = 107199;
-            impuestoFB = 23956;
-            impuestoFE = 0.37F;
+        if (taxableBase < 11902.0F){
+            return 0.0F;
+            
+        }else{
+            return taxExempt(taxableBase);
         }
         
-        impuestoTotal = impuestoFB + ((salaryA - fraccionBasica) * impuestoFE);
-                      
-        return impuestoTotal;
+    }
+    
+    public static float taxExempt(float taxableBase){      
+        if(taxableBase > 11902.0F && taxableBase < 15159.0F){
+            return (taxableBase - 11902.0F)*5/100;
+            
+        }else if(taxableBase > 15159.0F && taxableBase < 19682.0F){
+            return ((taxableBase - 15159.0F)*10/100)+163.0F;
+            
+        }else if(taxableBase > 19682.0F && taxableBase < 26031.0F){
+            return ((taxableBase - 19682.0F)*12/100)+615.0F;
+            
+        }else if(taxableBase > 26031.0F && taxableBase < 34255.0F){
+            return ((taxableBase - 26031.0F)*15/100)+1377.0F;
+            
+        }else if(taxableBase > 34255.0F && taxableBase < 45407.0F){
+            return ((taxableBase - 34255.0F)*20/100)+2611.0F;
+            
+        }else if(taxableBase > 45407.0F && taxableBase < 60450.0F){
+            return ((taxableBase - 45407.0F)*25/100)+4841.0F;
+            
+        }else if(taxableBase > 60450.0F && taxableBase < 80605.0F){
+            return ((taxableBase - 60450.0F)*30/100)+8602.0F;
+            
+        }else if(taxableBase > 80605.0F && taxableBase < 107199.0F){
+            return ((taxableBase - 80605.0F)*35/100)+14648.0F;
+            
+        }else if(taxableBase > 107199.0F){
+            return ((taxableBase - 107199.0F)*37/100)+23956.0F;
+            
+        }
+        return 0.0F;
+        
     }
 }
