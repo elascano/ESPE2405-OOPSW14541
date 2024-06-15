@@ -70,7 +70,7 @@ public class FarmSimulator {
             molting = Boolean.parseBoolean(moltingString);
 
             Chicken chicken = new Chicken(id, name, color, age, molting, bornOnDate);
-
+            FileManager.save(chicken.toString(0), "chickens",0);
             FileManager.save(chicken.toString(1), "chickens",1);
             FileManager.save(chicken.toString(2), "chickens",2);
 

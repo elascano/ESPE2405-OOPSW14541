@@ -1,14 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espe.shopping.model;
 
 import taxes.Sales;
 
 /**
  *
- * @author Nahomi Cedeno
+* @author Nahomi Cedeño, CODE CREATORS, DCCO-ESPE
  */
 public class CellPhone {
     private int id;
