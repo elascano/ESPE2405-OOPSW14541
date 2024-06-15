@@ -20,6 +20,7 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+<<<<<<< Updated upstream
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,3 +98,20 @@
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/dist/
 =======
 >>>>>>> 39214f64e14c1eddbf1e2da78a5ebec8f0ec387e
+
+hs_err_pid*
+replay_pid*
+/hw/pantoja/u1/hw11ObjectInFile/nbproject/private/
+/hw/pantoja/u1/hw11ObjectInFile/build/
+/hw/pantoja/u1/hw11ObjectInFile/dist/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/build/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/dist/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/nbproject/private/
+/hw/pantoja/u1/hw11ObjectInFile/ObectjManagerLibs/build/
+/hw/pantoja/u1/hw11ObjectInFile/ObectjManagerLibs/nbproject/private/
+/hw/pantoja/u1/hw12IncomeIR/Taxes/build/
+/hw/pantoja/u1/hw12IncomeIR/Taxes/nbproject/private/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/build/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/dist/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/nbproject/private/
+>>>>>>> Stashed changes
