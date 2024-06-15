@@ -15,7 +15,7 @@ public class FarmSimulator {
 
     public static void main(String[] args) throws IOException, ParseException {
         Scanner input = new Scanner(System.in);
-        System.out.println("Saray's Chicken Farm Simulator V 0.5");
+        System.out.println("NAHOMI's Chicken Farm Simulator V 0.5");
         
         
         int menuOption;
