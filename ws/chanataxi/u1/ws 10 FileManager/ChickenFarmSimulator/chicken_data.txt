@@ -1,0 +1,3 @@
+Chicken{id=1, name=David, color=Green, age=31, molting=true, bornOnDate=Sat Dec 05 00:00:00 ECST 1992}
+Chicken{id=2, name=Enzo, color=While, age=364, molting=false, bornOnDate=Tue Feb 03 00:00:00 ECT 1660}
+Chicken{id=3, name=Ronnald, color=Blue, age=21, molting=false, bornOnDate=Thu Jan 02 00:00:00 ECT 2003}

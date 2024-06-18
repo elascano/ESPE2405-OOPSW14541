@@ -1,0 +1,22 @@
+# ESPE2405-OOPSW14541
+Ant ok
+AntEaters ok
+Area ok
+Colony ok
+Position ?
+Nest ok
+Cell ok
+PilesOfFood ok
+Pheromone ok
+Food ok
+Time ?
+Location ?
+Simulation ok
+Direction ?
+Ground ok
+Path ok
+AntHill ok
+User ?
+Resource ?
+Level ?
+
