@@ -1,0 +1,2 @@
+Chicken{id=8, color=red, name=Juan, age=24, birthDate=2000-02-24}
+Chicken{id=8, color=browm, name=Luis, age=20, birthDate=2003-08-25}

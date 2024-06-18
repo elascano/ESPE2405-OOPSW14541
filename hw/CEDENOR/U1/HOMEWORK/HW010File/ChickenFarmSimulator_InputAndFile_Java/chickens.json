@@ -1,0 +1,8 @@
+id: 1545
+name: Billy
+color: yellow
+age: 0
+molting:true
+bornOnDate:21/05/2024
+
+{"id":1444, "name":"Luis", "color":"red", "age":0, "molting":true, "bornOnDate":"07/12/2024"}

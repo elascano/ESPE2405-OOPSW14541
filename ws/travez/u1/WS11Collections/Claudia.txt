@@ -1,0 +1,1 @@
+Chicken{id=3, name='Claudia', color='Brown and White', age=4, molting=true, bornOnDate=2020-04-26}
