@@ -12,7 +12,7 @@ import ec.edu.espe.shopping.model.*;
  */
 public class ShoppingCenter {
     public static void main(String[] args) {
-        float totalPrice;
+        float salary= 2000.0F, taxPayment;
         
         CellPhone cellPhone;
         cellPhone = new CellPhone(0,"motorola","black",2000.0F,15.0F);
