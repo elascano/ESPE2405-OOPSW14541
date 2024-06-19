@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package espe.edu.ec.referentsDT.model;
+package ec.edu.espe.referenceddt.model;
 
 /**
  *
- * @author DELL
+ * @author ,Cristian Lisintuña, DCCO-ESPE
  */
 public class Professor {
     private int id;
@@ -14,6 +14,25 @@ public class Professor {
     private float salary;
     private int age;
 
+    @Override
+    public String toString() {
+        return "Professor{" + "id=" + id + ", name=" + name + ", salary=" + salary + ", age=" + age + '}';
+    }
+
+    
+    
+    public Professor(int id, String name, float salary, int age) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
+    }
+
+   
+
+    
+    
+    
     /**
      * @return the id
      */
@@ -69,4 +88,6 @@ public class Professor {
     public void setAge(int age) {
         this.age = age;
     }
+    
+    
 }
