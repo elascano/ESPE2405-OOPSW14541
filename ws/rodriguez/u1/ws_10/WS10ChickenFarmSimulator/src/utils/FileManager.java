@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Eduardo Segarra, TheJavaBandits, DCCO-ESPE
+ * @author David Rodriguez,THEJAVABANDITS DCCO-ESPE
  */
 public class FileManager {
 
