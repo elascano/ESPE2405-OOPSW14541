@@ -3,17 +3,20 @@ package ObjectLib;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *
+ * @author Saray Cañarte, codecreators, DCCO - ESPE
+ */
 public class ObjectManager {
     public static void saveObject(Object obj, String filename) {
         try {
-            FileOutputStream fileOut = new FileOutputStream(filename, true); // Modo append
+            FileOutputStream fileOut = new FileOutputStream(filename, true); 
             ObjectOutputStream objectOut;
             
             if (new File(filename).length() == 0) {
-                objectOut = new ObjectOutputStream(fileOut); // Usa ObjectOutputStream normal si el archivo está vacío
+                objectOut = new ObjectOutputStream(fileOut); 
             } else {
-                objectOut = new AppendingObjectOutputStream(fileOut); // Usa AppendingObjectOutputStream si el archivo no está vacío
+                objectOut = new AppendingObjectOutputStream(fileOut); 
             }
             
             objectOut.writeObject(obj);

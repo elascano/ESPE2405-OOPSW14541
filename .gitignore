@@ -1,0 +1,105 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+
+/ws/arboleda/u1/WS15ReferenceDt/PrimitiveData/nbproject/private/
+/ws/arboleda/u1/WS09PrimitiveData/PrimitiveData/build/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/nbproject/private/
+/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/build/
+/hw/villagomez/u1/hw10_ChickenFile/ChickenFarmSimulator2/nbproject/private/
+/ws/lisintuña/u1/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/ws11/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/nbproject/private/
+/ws/lisintuña/u1/ws11/Collection.java/build/
+/ws/lisintuña/u1/ws11/Collection/build/
+/ws/lisintuña/u1/ws11/Collection/nbproject/private/
+/ws/lisintuña/u1/ws11/CollectionJava/build/
+/ws/lisintuña/u1/ws11/CollectionJava/nbproject/private/
+/ws/lisintuña/u1/WS11Collection/Collection/build/
+/ws/lisintuña/u1/WS11Collection/Collection/nbproject/private/
+/ws/ayuquina/u1/Collections/nbproject/private/
+/ws/ayuquina/u1/Collections/build/
+/ws/ayuquina/u1/ws12FromClassesToCode/FromClassesToCode/nbproject/private/
+/ws/ayuquina/u1/ws12FromClassesToCode/FromClassesToCode/build/
+/ws/ayuquina/u1/ws12FromClassesToCode/FromClassesToCode/dist/
+/ws/ayuquina/u1/ws12FromClassesToCode/FromClassesToCode/FromClassesToCode/build/
+/ws/ayuquina/u1/ws12FromClassesToCode/FromClassesToCode/FromClassesToCode/nbproject/private/
+/ws/ayuquina/u1/ws13Taxes/Taxes/nbproject/private/
+/ws/ayuquina/u1/ws13Taxes/Taxes/build/
+/ws/ayuquina/u1/ws13Taxes/Taxes/dist/
+/ws/ayuquina/u1/ws13Libs/Taxes/build/
+/ws/ayuquina/u1/ws13Libs/Taxes/nbproject/private/
+/ws/ayuquina/u1/ws13Libs/Taxes/dist/
+/ws/ayuquina/u1/ws13Libs/ShopppingCenter/build/
+/ws/ayuquina/u1/ws13Libs/ShopppingCenter/dist/
+/ws/ayuquina/u1/ws13Libs/ShopppingCenter/nbproject/private/
+/ws/lisintuña/u1/New Folder/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/nbproject/private/
+/ws/lisintuña/u1/WS12/FromClassesToCode/build/
+/hw/cedenor/U1/HOMEWORK/WS13Taxes/nbproject/private/
+/hw/cedenor/U1/HOMEWORK/WS13Taxes/build/
+/hw/cedenor/U1/HOMEWORK/ShoppingCenter/nbproject/private/
+/hw/cedenor/U1/HOMEWORK/WS13Taxes/dist/
+/hw/cedenor/U1/HOMEWORK/ShoppingCenter/build/
+/hw/cedenor/U1/HOMEWORK/ShoppingCenter/dist/
+/ws/arboleda/u1/W13Library/Taxes/nbproject/private/
+/ws/arboleda/u1/W13Library/Taxes/build/
+/ws/arboleda/u1/W13Library/Taxes/dist/
+/ws/arboleda/u1/W13Library/ShoppingCenter/nbproject/private/
+/ws/arboleda/u1/W13Library/ShoppingCenter/build/
+/ws/arboleda/u1/W13Library/ShoppingCenter/dist/
+/ws/ayuquina/u1/ws15ReferenceDataTypes/ReferenceDataType/nbproject/private/
+/ws/ayuquina/u1/ws15ReferenceDataTypes/ReferenceDataType/build/
+/ws/ayuquina/u1/ws15ReferenceDataTypes/ReferenceDataType/dist/
+/ws/arboleda/u1/WS15ReferenceDt/ReferenceDT/nbproject/private/
+/ws/arboleda/u1/WS15ReferenceDt/ReferenceDT/build/
+<<<<<<< HEAD
+>>>>>>> 9643fea491c469a56eed419ffc14cdccdecb9a42
+>>>>>>> a40e32180bf84fbf3c267b8788c41963fe8fc410
+/hw/gavilanez/u1/hw08ChikenFarmSimulator/ChickenFarmSimulator2/nbproject/private/
+/hw/gavilanez/u1/hw08ChikenFarmSimulator/ChickenFarmSimulator/nbproject/private/
+/ws/gavilanez/u1/ws10CDfileManager/ws10ChickenFarmSimulator/build/
+/hw/gavilanez/u1/hw10File/HW10ChickenFarmSimulator/nbproject/private/
+=======
+/ws/ayuquina/u1/ws15ReferenceDataTypes/ArchivosJson/nbproject/private/
+/ws/ayuquina/u1/ws15ReferenceDataTypes/ArchivosJson/build/
+/hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/nbproject/private/
+/hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/build/
+/hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/dist/
+/hw/pantoja/u1/hw11ObjectInFile/nbproject/private/
+/hw/pantoja/u1/hw11ObjectInFile/build/
+/hw/pantoja/u1/hw11ObjectInFile/dist/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/build/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/dist/
+/hw/pantoja/u1/hw11ObjectInFile/hw11ObjectInFile/nbproject/private/
+/hw/pantoja/u1/hw11ObjectInFile/ObectjManagerLibs/build/
+/hw/pantoja/u1/hw11ObjectInFile/ObectjManagerLibs/nbproject/private/
+/hw/pantoja/u1/hw12IncomeIR/Taxes/build/
+/hw/pantoja/u1/hw12IncomeIR/Taxes/nbproject/private/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/build/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/dist/
+/hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/nbproject/private/
+
+>>>>>>> d5e70a004b12bcf0653ad8f6d33ebfc107442034
+/hw/gavilanez/u1/hw12IncomeIR/Tax/nbproject/private/
