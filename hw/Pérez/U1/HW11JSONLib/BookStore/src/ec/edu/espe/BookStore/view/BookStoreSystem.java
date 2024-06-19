@@ -9,7 +9,7 @@ public class BookStoreSystem {
         JsonHandler<Book> jsonHandler = new JsonHandler<>("Books.json", Book.class);
 
 
-        Book book = new Book("La mecanica del corazon", "Mathias Malzieu", 2007, "Love", 176);
+        Book book = new Book("La mecanica del corazon", "Mathias Malzieu", 2007, "Lovex", 176);
 
 
         jsonHandler.addObject(book);

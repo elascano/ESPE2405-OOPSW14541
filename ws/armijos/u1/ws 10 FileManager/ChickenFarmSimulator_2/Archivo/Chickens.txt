@@ -1,0 +1,2 @@
+Chicken{id=1, name=Clucky, color=White, age=2, molting=false, bornOnDate=Tue Jun 18 21:37:09 ECT 2024}
+Chicken{id=2, name=Feathers, color=Brown, age=1, molting=true, bornOnDate=Tue Jun 18 21:37:09 ECT 2024}
