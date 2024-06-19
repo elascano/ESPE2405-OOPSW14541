@@ -1,0 +1,1 @@
+CellPhone{id=0, brant=motorola, color=black, basePrice=2000.0, pvp=2300.0}

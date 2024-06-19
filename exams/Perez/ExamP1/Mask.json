@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "N95",
+        "type": "Respirator",
+        "price": 5.99
+    },
+    {
+        "id": 2,
+        "name": "Surgical Mask",
+        "type": "Medical",
+        "price": 0.99
+    },
+    {
+        "id": 2,
+        "name": "pepe",
+        "type": "KN95",
+        "price": 15
+    }
+]
