@@ -7,7 +7,7 @@ package ec.edu.espe.chickenfarmsimulator.model;
 /**
  * Chicken Model
  *
- * Author: Eduardo Segarra, TheJavaBandits, DCCO-ESPE
+ * @author David Rodriguez,THEJAVABANDITS DCCO-ESPE
  */
 public class Chicken {
 
