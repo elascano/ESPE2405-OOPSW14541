@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Barry Allen",
+    "power": "Super speed",
+    "speed": "Mach 2"
+  },
+  {
+    "id": 2,
+    "name": "Wally West",
+    "power": "Speed force manipulation",
+    "speed": "Mach 3"
+  }
+]
