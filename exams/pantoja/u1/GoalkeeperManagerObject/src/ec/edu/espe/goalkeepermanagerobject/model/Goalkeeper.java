@@ -12,9 +12,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.FileWriter;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import jdk.nashorn.internal.parser.JSONParser;
+
 
 public class Goalkeeper {
 
