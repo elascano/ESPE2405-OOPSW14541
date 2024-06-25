@@ -1,20 +1,29 @@
 const SchoolBag = require('./SchoolBag');
 
 class SchoolBagSimulator {
+    static generateData() {
+        const schoolBags = [];
+
+        let schoolBag1 = new SchoolBag(1, "Totto", "White and brown");
+        schoolBags.push(schoolBag1);
+
+        let schoolBag2 = new SchoolBag(2, "Nike", "black");
+        schoolBags.push(schoolBag2);
+
+        return schoolBags;
+    }
+
     static main() {
         console.log("Christian's School Bag simulator V0.9");
+        const schoolBags = SchoolBagSimulator.generateData();
 
-        let SchoolBag = new SchoolBag(1, "Totto", "White and brown");
-        console.log("SchoolBag -->\n" + SchoolBag.toString());
-
-        let id = 2;
-        let brand = "Nike";
-        let color = "black";
-   
-
-        SchoolBag = new SchoolBag(id, brand, color);
-        console.log("SchoolBag2 --> \n" + SchoolBag.toString());
+        schoolBags.forEach((bag, index) => {
+            console.log(`SchoolBag${index + 1} -->\n${bag.toString()}`);
+        });
     }
 }
 
 SchoolBagSimulator.main();
+
+module.exports = SchoolBagSimulator;
+

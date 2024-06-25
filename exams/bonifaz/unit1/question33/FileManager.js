@@ -1,6 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 const SchoolBag = require('./SchoolBag');
+const SchoolBagSimulator = require('./SchoolBagSimulator');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -8,8 +9,7 @@ const rl = readline.createInterface({
 });
 
 const questions = ["ID: ", "Brand: ", "Color: "];
-
-let schoolbag;
+let schoolBag;
 
 function askQuestion(index, answers = []) {
     rl.question(questions[index], function(answer) {
@@ -24,18 +24,51 @@ function askQuestion(index, answers = []) {
 }
 
 function createSchoolBag(data) {
-    const bornOnDate = new Date();
-    schoolbag = new SchoolBag(data[0], data[1], data[2]);
-    saveSchoolBagToFile(schoolbag);
+    schoolBag = new SchoolBag(data[0], data[1], data[2]);
+    saveSchoolBagToFile(schoolBag);
 }
 
-function saveSchoolBagToFile(schoolbag) {
-    const filePath = 'C:\\Users\\Downloads\\SchoolBagData.txt';
-    fs.writeFileSync(filePath, schoolbag.toString() + '\n');
+function saveSchoolBagToFile(schoolBag) {
+    const filePath = 'SchoolBagData.json';
+    let existingData = [];
+
+  
+    if (fs.existsSync(filePath)) {
+        const rawData = fs.readFileSync(filePath);
+        existingData = JSON.parse(rawData);
+    }
+
+    
+    existingData.push({
+        id: schoolBag.getId(),
+        brand: schoolBag.getBrand(),
+        color: schoolBag.getColor()
+    });
+
+   
+    fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
     console.log("SchoolBag data has been saved to " + filePath);
 }
 
-console.log("School bag simulator");
-console.log("\nPlease enter chicken details:");
 
+function saveSimulatorData() {
+    const schoolBags = SchoolBagSimulator.generateData();
+    const filePath = 'SchoolBagSimulatorData.json';
+    
+    const data = schoolBags.map(bag => ({
+        id: bag.getId(),
+        brand: bag.getBrand(),
+        color: bag.getColor()
+    }));
+
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    console.log("SchoolBagSimulator data has been saved to " + filePath);
+}
+
+console.log("School bag simulator");
+
+    
+saveSimulatorData();
+
+console.log("\nPlease enter new bag details:");
 askQuestion(0);
