@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "name": "Clucky",
+  "color": "White",
+  "age": 2,
+  "molting": false,
+  "bornOnDate": "Jun 18, 2024, 9:47:07 PM"
+}
+{
+  "id": 2,
+  "name": "Feathers",
+  "color": "Brown",
+  "age": 1,
+  "molting": true,
+  "bornOnDate": "Jun 18, 2024, 9:47:07 PM"
+}
+{
+  "id": 3,
+  "name": "Remy",
+  "color": "Black",
+  "age": 3,
+  "molting": true,
+  "bornOnDate": "Jun 18, 2024, 9:47:07 PM"
+}
