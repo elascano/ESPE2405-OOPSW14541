@@ -14,7 +14,7 @@ import java.time.Period;
 /**
  * Chicken Farm Simulator View
  *
- * Author: Eduardo Segarra, TheJavaBandits, DCCO-ESPE
+ * @author David Rodriguez,THEJAVABANDITS DCCO-ESPE
  */
 public class ChickenFarmSimulator {
 

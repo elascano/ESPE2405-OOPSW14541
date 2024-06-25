@@ -1,0 +1,25 @@
+run:
+Yuliana Valencia's Chicken Farm Simulator V 0.5
+Enter the ID for the chicken:
+01
+Enter the name of the chicken: 
+anahi
+Enter the color of the chicken: 
+blue
+The chicken is molting? (true or false): 
+true
+Enter the born year of the chicken: 
+2003
+Enter the born month of the chicken (1-12): 
+4
+Enter the born day of the chicken: 
+31
+Invalid date. Please, type a valid combination of year, month and day.
+Enter the born day of the chicken: 
+1
+In what type of file you want to save this data?
+1 for TXT 
+2 for CSV 
+3 for JSON
+1
+BUILD SUCCESSFUL (total time: 40 seconds)
