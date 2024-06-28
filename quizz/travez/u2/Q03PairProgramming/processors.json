@@ -1,0 +1,5 @@
+[
+    {"name": "Ryzen 3", "price": 100, "core": 4},
+    {"name": "Ryzen 5", "price": 150, "core": 6},
+    {"name": "Ryzen 7", "price": 200, "core": 8}
+]
