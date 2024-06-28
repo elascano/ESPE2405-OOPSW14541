@@ -1,0 +1,22 @@
+import json
+
+class BookShelf:
+    def __init__(self, name):
+        self.name = name
+        self.books = []
+
+    def registerBook(self, book):
+        self.books.append(book)
+        print(f"El libro '{book.title}' ha sido registrado en el estante '{self.name}'.")
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "books": [book.to_dict() for book in self.books]
+        }
+
+    @staticmethod
+    def from_dict(data):
+        shelf = BookShelf(data["name"])
+        shelf.books = [Book.from_dict(book) for book in data["books"]]
+        return shelf
