@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./ec_edu_espe_songplaylist_model",
+        "./ec_edu_espe_songplaylist_model"
+    ]
+}
