@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name_song": "Tu nombre",
+        "artist": "Spinetta",
+        "gender": "Rock"
+    },
+    {
+        "id": 2,
+        "name_song": "El ultimo baile",
+        "artist": "Alvaro Diaz",
+        "gender": "Alternative"
+    },
+    {
+        "id": 3,
+        "name_song": "High way to hell",
+        "artist": "AC DC",
+        "gender": "Rock"
+    },
+    {
+        "id": 78,
+        "name_song": "Fool for you",
+        "artist": "Alice Smith",
+        "gender": "Rock"
+    },
+    {
+        "id": 76,
+        "name_song": "Buenos Aires",
+        "artist": "Nathy Peluso",
+        "gender": "Alternative"
+    },
+    {
+        "id": 6,
+        "name_song": "The trooper",
+        "artist": "Iron Maiden",
+        "gender": "Rock"
+    },
+    {
+        "id": 56,
+        "name_song": "La nave del olvido",
+        "artist": "jose jose",
+        "gender": "Bolero"
+    },
+    {
+        "id": 34,
+        "name_song": "Tu tanta falta de querer",
+        "artist": "mon laferte",
+        "gender": "Alternative"
+    },
+    {
+        "id": 44,
+        "name_song": "Hasta que te conoci",
+        "artist": "Juan Gabriel",
+        "gender": "Bolero"
+    },
+    {
+        "id": 45,
+        "name_song": "Lo hice, te deje",
+        "artist": "Daniel me estas matando",
+        "gender": "Bolero"
+    },
+    {
+        "id": 23,
+        "name_song": "Guatauba",
+        "artist": "Plan B",
+        "gender": "Reggaeton"
+    },
+    {
+        "id": 9,
+        "name_song": "Dile a el",
+        "artist": "Rauw Alejandro",
+        "gender": "Reggaeton"
+    },
+    {
+        "id": 5,
+        "name_song": "UN PREVIEW",
+        "artist": "Bad Bunny",
+        "gender": "Reggaeton"
+    },
+    {
+        "id": 8,
+        "name_song": "Quimica",
+        "artist": "Don Omar",
+        "gender": "Reggaeton"
+    }
+]
