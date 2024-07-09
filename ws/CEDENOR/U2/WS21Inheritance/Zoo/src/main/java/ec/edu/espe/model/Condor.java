@@ -6,8 +6,10 @@ package ec.edu.espe.model;
 
 /**
  *
- * @author lilit
+ * @author Nahomi Cedeño, codecreators, DCCO-ESPE
  */
-public class Condor {
+public class Condor extends Bird{
+    private String mountain; 
+    
     
 }

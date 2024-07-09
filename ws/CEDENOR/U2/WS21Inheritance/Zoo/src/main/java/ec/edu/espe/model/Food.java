@@ -8,8 +8,6 @@ package ec.edu.espe.model;
  *
  * @author Nahomi Cedeño, codecreators, DCCO-ESPE
  */
-public class Lion extends Feline{
-    private boolean name; 
-    
+public class Food {
     
 }

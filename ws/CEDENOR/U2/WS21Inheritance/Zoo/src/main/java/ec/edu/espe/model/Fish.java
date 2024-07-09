@@ -6,7 +6,7 @@ package ec.edu.espe.model;
 
 /**
  *
- * @author lilit
+} * @author Nahomi Cedeño, codecreators, DCCO-ESPE
  */
 public class Fish extends Animal{
     
