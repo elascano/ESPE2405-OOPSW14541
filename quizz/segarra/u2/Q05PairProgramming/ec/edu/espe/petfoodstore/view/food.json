@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "brand": "procan",
+    "type": "dog",
+    "price": 2.5,
+    "amountInLb": 100
+  },
+  {
+    "id": 2,
+    "brand": "prolan",
+    "type": "dog",
+    "price": 3.5,
+    "amountInLb": 200
+  },
+  {
+    "id": 3,
+    "brand": "dogchow",
+    "type": "dog",
+    "price": 9.6,
+    "amountInLb": 165
+  },
+  {
+    "id": 4,
+    "brand": "whiskas",
+    "type": "cat",
+    "price": 3.6,
+    "amountInLb": 100
+  },
+  {
+    "id": 5,
+    "brand": "procat",
+    "type": "cat",
+    "price": 6.5,
+    "amountInLb": 100
+  },
+  {
+    "id": 6,
+    "brand": "michu",
+    "type": "cat",
+    "price": 5.5,
+    "amountInLb": 75
+  }
+]

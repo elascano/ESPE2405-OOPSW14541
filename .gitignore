@@ -74,25 +74,25 @@
 /ws/ayuquina/u1/ws15ReferenceDataTypes/ReferenceDataType/dist/
 /ws/arboleda/u1/WS15ReferenceDt/ReferenceDT/nbproject/private/
 /ws/arboleda/u1/WS15ReferenceDt/ReferenceDT/build/
-<<<<<<< HEAD
->>>>>>> 9643fea491c469a56eed419ffc14cdccdecb9a42
->>>>>>> a40e32180bf84fbf3c267b8788c41963fe8fc410
+ HEAD
+ 9643fea491c469a56eed419ffc14cdccdecb9a42
+ a40e32180bf84fbf3c267b8788c41963fe8fc410
 /hw/gavilanez/u1/hw08ChikenFarmSimulator/ChickenFarmSimulator2/nbproject/private/
 /hw/gavilanez/u1/hw08ChikenFarmSimulator/ChickenFarmSimulator/nbproject/private/
 /ws/gavilanez/u1/ws10CDfileManager/ws10ChickenFarmSimulator/build/
 /hw/gavilanez/u1/hw10File/HW10ChickenFarmSimulator/nbproject/private/
-=======
+
 /ws/ayuquina/u1/ws15ReferenceDataTypes/ArchivosJson/nbproject/private/
 /ws/ayuquina/u1/ws15ReferenceDataTypes/ArchivosJson/build/
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/nbproject/private/
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/build/
 /hw/ayuquina/u1/hw11ObjectInFile/ObjectInFile/dist/
-<<<<<<< HEAD
-=======
->>>>>>> 39214f64e14c1eddbf1e2da78a5ebec8f0ec387e
->>>>>>> c4dbc3af54ff5482eb76e1fced9e8186bb5a358f
+HEAD
+
+ 39214f64e14c1eddbf1e2da78a5ebec8f0ec387e
+ c4dbc3af54ff5482eb76e1fced9e8186bb5a358f
 /hw/villagomez/u1/hw12CalculateIR/FileManager/nbproject/private/
-=======
+
 /hw/pantoja/u1/hw11ObjectInFile/nbproject/private/
 /hw/pantoja/u1/hw11ObjectInFile/build/
 /hw/pantoja/u1/hw11ObjectInFile/dist/
@@ -107,12 +107,13 @@
 /hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/dist/
 /hw/pantoja/u1/hw12IncomeIR/ws13ShoppingCenter/nbproject/private/
 
->>>>>>> d5e70a004b12bcf0653ad8f6d33ebfc107442034
+ d5e70a004b12bcf0653ad8f6d33ebfc107442034
 /hw/gavilanez/u1/hw12IncomeIR/Tax/nbproject/private/
-<<<<<<< HEAD
+HEAD
 /ws/gavilanez/u1/ws15ReferencedDT/Examen/nbproject/private/
 /exams/gavilanez/u1/question33/Exam/nbproject/private/
 /exams/gavilanez/u1/question33/Exam/build/
+<<<<<<< HEAD
 =======
 >>>>>>> c0f56bfc46b59c00e80dd960ebf863d24c451dac
 >>>>>>> a8299d1cd1e8c649fb8bde993b47cc32bd48683f
@@ -120,3 +121,11 @@
 /hw/villagomez/u2/hw15MongoShell/hw15MongoShellDB/build/
 /ws/villagomez/u2/ws21zooWithInheritance/ws21Zoo/target/
 /ws/villagomez/u2/ws23UnitTest/ComplexOperations/nbproject/
+=======
+
+c0f56bfc46b59c00e80dd960ebf863d24c451dac
+a8299d1cd1e8c649fb8bde993b47cc32bd48683f
+/hw/CEDENOR/U2/hw15/MongoConnection/nbproject/private/
+/hw/CEDENOR/U2/hw15/MongoConnection/build/
+/ws/cedenor/U2/WS23UnitTest/ComplitexOperations/target/
+>>>>>>> 13dc3be64f8b14688cbb3f18204fc26b63eef73b

@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}

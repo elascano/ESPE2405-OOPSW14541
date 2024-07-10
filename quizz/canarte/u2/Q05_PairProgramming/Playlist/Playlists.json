@@ -1,0 +1,98 @@
+[
+    {
+        "id": 2,
+        "playlist_name": "Pa barrer",
+        "songs": [
+            {
+                "id": 1,
+                "name_song": "Tu nombre",
+                "artist": "Spinetta",
+                "gender": "Rock"
+            },
+            {
+                "id": 3,
+                "name_song": "High way to hell",
+                "artist": "AC DC",
+                "gender": "Rock"
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "playlist_name": "777",
+        "songs": [
+            {
+                "id": 76,
+                "name_song": "Buenos Aires",
+                "artist": "Nathy Peluso",
+                "gender": "Alternative"
+            },
+            {
+                "id": 6,
+                "name_song": "The trooper",
+                "artist": "Iron Maiden",
+                "gender": "Rock"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "playlist_name": "Boleros fav",
+        "songs": [
+            {
+                "id": 45,
+                "name_song": "Lo hice, te deje",
+                "artist": "Daniel me estas matando",
+                "gender": "Bolero"
+            },
+            {
+                "id": 44,
+                "name_song": "Hasta que te conoci",
+                "artist": "Juan Gabriel",
+                "gender": "Bolero"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "playlist_name": "sf",
+        "songs": [
+            {
+                "id": 2,
+                "name_song": "El ultimo baile",
+                "artist": "Alvaro Diaz",
+                "gender": "Alternative"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "playlist_name": "Reggaetonnnn",
+        "songs": [
+            {
+                "id": 23,
+                "name_song": "Guatauba",
+                "artist": "Plan B",
+                "gender": "Reggaeton"
+            },
+            {
+                "id": 9,
+                "name_song": "Dile a el",
+                "artist": "Rauw Alejandro",
+                "gender": "Reggaeton"
+            },
+            {
+                "id": 5,
+                "name_song": "UN PREVIEW",
+                "artist": "Bad Bunny",
+                "gender": "Reggaeton"
+            },
+            {
+                "id": 8,
+                "name_song": "Quimica",
+                "artist": "Don Omar",
+                "gender": "Reggaeton"
+            }
+        ]
+    }
+]
