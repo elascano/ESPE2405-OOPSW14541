@@ -14,7 +14,7 @@ public class Shark extends Fish{
 
     @Override
     public void Feed(int food) {
-        System.out.println("Feeding to Shark ");
+        System.out.println("Feeding the Shark with " + food + " seal");
     }
     
 }
