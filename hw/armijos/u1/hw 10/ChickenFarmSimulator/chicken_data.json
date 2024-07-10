@@ -1,0 +1,18 @@
+[
+  {
+    "id": 12,
+    "name": "Lucy",
+    "color": "White",
+    "age": 21,
+    "molting": true,
+    "bornOnDate": "Feb 12, 2003, 12:00:00 AM"
+  },
+  {
+    "id": 13,
+    "name": "Remy",
+    "color": "Brown",
+    "age": 21,
+    "molting": false,
+    "bornOnDate": "Apr 16, 2003, 12:00:00 AM"
+  }
+]

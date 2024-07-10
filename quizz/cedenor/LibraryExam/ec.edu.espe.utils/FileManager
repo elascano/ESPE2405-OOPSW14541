@@ -1,0 +1,38 @@
+class FileManager:
+    def __init__(self):
+        pass
+
+    def createFile(self, filename):
+        # Crear un nuevo archivo
+        with open(filename, 'w') as file:
+            file.write("Contenido inicial del archivo.")
+        print(f"Archivo '{filename}' creado exitosamente.")
+
+    def readFile(self, filename):
+        # Leer el contenido de un archivo
+        try:
+            with open(filename, 'r') as file:
+                content = file.read()
+                print(f"Contenido del archivo '{filename}':")
+                print(content)
+        except FileNotFoundError:
+            print(f"El archivo '{filename}' no existe.")
+
+    def appendToFile(self, filename, text):
+        # Agregar texto al final de un archivo
+        with open(filename, 'a') as file:
+            file.write("\n" + text)
+        print(f"Texto agregado al archivo '{filename}'.")
+
+# Crear una instancia de FileManager y probar las funciones
+file_manager = FileManager()
+
+# Crear un nuevo archivo
+file_manager.createFile("example.txt")
+
+# Leer el contenido del archivo
+file_manager.readFile("example.txt")
+
+# Agregar texto al archivo
+file_manager.appendToFile("example.txt", "Texto adicional en el archivo.")
+file_manager.readFile("example.txt")
