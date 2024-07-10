@@ -33,7 +33,7 @@ public abstract class Animal {
     public abstract void Feed(int food);
 
     public void register(Cage cage) {
-        System.out.println("Register the animal ---> " + this.getClass().getSimpleName() + "in cage " + cage);
+        System.out.println("Register the animal ---> " + this.getClass().getSimpleName() + " in " + cage);
     }
 
     /**

@@ -17,16 +17,16 @@ public class Lion extends Feline{
 
     @Override
     public String toString() {
-        return "Lion{" + "mane=" + mane + super.toString() + '}';
+        return "Lion{" + "mane= " + mane + super.toString() + '}';
     }
     
     @Override
     public void Feed(int food) {
-        System.out.println("Feeding a Lion with " + food + " rats");
+        System.out.println("Feeding the Lion with " + food + " antelope");
     }
     
     public void feed(int quantity, Food food){
-        System.out.println("Feeding the lion with " + quantity + " " + food + "(s)");
+        System.out.println("Feeding the Lion with " + quantity + " " + food);
         System.out.println("Number of legs " + numberOfLegs);
     }
 

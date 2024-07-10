@@ -14,6 +14,6 @@ public class Monkey extends Primate{
 
     @Override
     public void Feed(int food) {
-        System.out.println("Feeding a monkey " + food + " bananas"); 
+        System.out.println("Feeding the Monkey with " + food + " bananas"); 
     }
 }
