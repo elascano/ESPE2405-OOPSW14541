@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  *
- * @author David Morillo, JavaSquad, DCCO-ESPE
+ * @author Domenica Villagomez, CommitCrew, DCCO-ESPE
  */
 public class Shark extends Fish{
 
