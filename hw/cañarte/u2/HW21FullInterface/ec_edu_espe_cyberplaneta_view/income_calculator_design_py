@@ -1,0 +1,87 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from ec_edu_espe_cyberplaneta_model.price_list import price_list
+from ec_edu_espe_cyberplaneta_controller.compute_income import ComputeIncome
+from ec_edu_espe_cyberplaneta_controller.save_in_mongo import DatabaseManager
+
+mongourl = "mongodb+srv://canarte:canarte@cluster0.devwm9s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+database_name = "cyberplaneta_pricingsystem"
+collection_name = "income_calculated"
+db_manager = DatabaseManager(mongourl, database_name, collection_name)
+
+# Saray Canarte, Code Creators
+
+class IncomeCalculatorDesign:  
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Sistema de Cálculo de Precios")
+
+        frame = tk.Frame(root, bg="darkblue")
+        frame.pack(pady=10, padx=10)
+        title = tk.Label(frame, text="Sistema de Cálculo de Precios", font=("Arial", 18, "bold"), bg="darkblue", fg="white")
+        title.grid(row=0, column=0, columnspan=4, pady=10)
+
+        cols = ("ID", "Nombre Del Proceso", "Precio Base ($)", "Impuesto (%)")
+        self.tree = ttk.Treeview(frame, columns=cols, show='headings')
+        
+        for col in cols:
+            self.tree.heading(col, text=col)
+            self.tree.column("ID", width=70)
+            self.tree.column("Nombre Del Proceso", width=300)
+            self.tree.column("Precio Base ($)", width=100)
+            self.tree.column("Impuesto (%)", width=100)
+        for item in price_list:
+            self.tree.insert("", "end", values=(item.id, item.nombre, item.precio, item.impuesto))
+
+        style = ttk.Style()
+        style.configure("Treeview.Heading", background="green", foreground="black")
+        style.configure("Treeview", background="white", foreground="black", rowheight=25, fieldbackground="white")
+        self.tree.grid(row=1, column=0, columnspan=4, pady=10)
+
+        tk.Label(frame, text="ID del proceso:", font=("Arial", 10, "bold"), bg="darkblue", fg="white").grid(row=2, column=0, padx=5, pady=5, sticky='e')
+        self.id_entry = tk.Entry(frame)
+        self.id_entry.grid(row=2, column=1, padx=5, pady=5)
+
+        tk.Label(frame, text="Número de Documentación:", font=("Arial", 10, "bold"), bg="darkblue", fg="white").grid(row=2, column=2, padx=5, pady=5, sticky='e')
+        self.num_doc_entry = tk.Entry(frame)
+        self.num_doc_entry.grid(row=2, column=3, padx=5, pady=5)
+
+        cancel_button = tk.Button(frame, text="Cancelar", command=root.quit, font=("Arial", 10, "bold"), bg="red", fg="white")
+        cancel_button.grid(row=3, column=0, columnspan=2, pady=10)
+
+        calculate_button = tk.Button(frame, text="Calcular", command=self.calculate, font=("Arial", 10, "bold"), bg="green", fg="white")
+        calculate_button.grid(row=3, column=2, columnspan=2, pady=10)
+
+    def calculate(self):
+        try:
+            process_id = int(self.id_entry.get())
+        except ValueError:
+            messagebox.showerror("Error", "El ID del proceso debe ser un número.")
+            return
+
+        try:
+            num_documentation = int(self.num_doc_entry.get())
+            if num_documentation < 0:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("Error", "El número de documentación debe ser un número mayor o igual a 0.")
+            return
+
+        selected_process = ComputeIncome.get_process_by_id(process_id, price_list)
+        if selected_process is None:
+            messagebox.showerror("Error", "El ID del proceso no está en la lista.")
+            return
+
+        total_price = ComputeIncome.calculate_total_price(selected_process, num_documentation)
+        db_manager.save_calculation(process_id, selected_process.nombre, selected_process.precio, selected_process.impuesto, num_documentation, total_price)
+        messagebox.showinfo("Total", f"El precio total es: ${total_price:.2f}")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = IncomeCalculatorDesign(root)
+    root.mainloop()
+

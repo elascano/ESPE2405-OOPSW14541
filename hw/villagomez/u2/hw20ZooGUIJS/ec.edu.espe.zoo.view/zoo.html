@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Animal Form</h1>
+    <form id="animalForm">
+        <!-- ID Field -->
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+
+        <!-- Description Field -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <!-- Born On Date Field -->
+        <label for="bornOnDate">Born On Date:</label>
+        <input type="date" id="bornOnDate" name="bornOnDate"><br><br>
+
+        <!-- Gender Combo Box -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select><br><br>
+
+        <!-- Cage Combo Box -->
+        <label for="cage">Cage:</label>
+        <select id="cage" name="cage">
+            <option value="poolCage">Pool Cage</option>
+            <option value="monkeyCage">Monkey Cage</option>
+            <option value="felineCage">Feline Cage</option>
+            <option value="birdCage">Bird Cage</option>
+        </select><br><br>
+
+        <!-- Number of Bones Slider -->
+        <label for="numberOfBones">Number of Bones:</label>
+        <input type="range" id="numberOfBones" name="numberOfBones" min="0" max="500" step="1">
+        <span id="bonesValue">0</span><br><br>
+
+        <!-- Vertebrate Radio Buttons -->
+        <label for="vertebrate">Vertebrate:</label>
+        <input type="radio" id="vertebrateYes" name="vertebrate" value="yes"> Yes
+        <input type="radio" id="vertebrateNo" name="vertebrate" value="no"> No<br><br>
+
+        <!-- Food List -->
+        <label for="food">Food:</label>
+        <select id="food" name="food" multiple>
+            <option value="mouse">Mouse</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="deer">Deer</option>
+            <option value="meat">Meat</option>
+            <option value="grains">Grains</option>
+            <option value="fish">Fish</option>
+        </select><br><br>
+
+        <button type="button" onclick="registerAnimal()">Register</button>
+        <button type="button" onclick="feedAnimal()">Feed</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

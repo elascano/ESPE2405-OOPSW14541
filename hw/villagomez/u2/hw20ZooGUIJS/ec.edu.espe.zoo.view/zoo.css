@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="range"] {
+    width: 200px;
+}

@@ -113,10 +113,42 @@ HEAD
 /ws/gavilanez/u1/ws15ReferencedDT/Examen/nbproject/private/
 /exams/gavilanez/u1/question33/Exam/nbproject/private/
 /exams/gavilanez/u1/question33/Exam/build/
+<<<<<<< HEAD
+=======
+>>>>>>> c0f56bfc46b59c00e80dd960ebf863d24c451dac
+>>>>>>> a8299d1cd1e8c649fb8bde993b47cc32bd48683f
+/hw/villagomez/u2/hw15MongoShell/hw15MongoShellDB/nbproject/private/
+/hw/villagomez/u2/hw15MongoShell/hw15MongoShellDB/build/
+/ws/villagomez/u2/ws21zooWithInheritance/ws21Zoo/target/
+/ws/villagomez/u2/ws23UnitTest/ComplexOperations/nbproject/
+=======
 
 c0f56bfc46b59c00e80dd960ebf863d24c451dac
 a8299d1cd1e8c649fb8bde993b47cc32bd48683f
+<<<<<<< HEAD
 /ws/rodriguez/u1/ws_13/JavaWhithMongoDB/nbproject/private/
 /ws/rodriguez/u1/ws_13/JavaWhithMongoDB/build/
 /hw/Rodriguez/u2/hw15/JavaWhithMongoDB/nbproject/private/
 /ws/rodriguez/u2/ws23/ComplesOperations/target/
+=======
+<<<<<<< HEAD
+/hw/ayuquina/u2/hw15MongoShell&Code/MongoManager/build/
+/hw/ayuquina/u2/hw15MongoShell&Code/MongoManager/nbproject/private/
+/hw/ayuquina/u2/hw15MongoShellAndCode/MongoManager/build/
+/hw/ayuquina/u2/hw15MongoShellAndCode/MongoManager/nbproject/private/
+/ws/ayuquina/u2/ws21zooWithInheritence/Zoo/target/
+/hw/ayuquina/u2/hw15MongoShellAndCode/MongoManagerMaven/target/
+/ws/ayuquina/u2/ws23UnitTest/ComplexOperations/target/
+/ws/ayuquina/u2/ws23UnitTest/ComplexOperations/nbproject/
+/ws/ayuquina/u2/ws21zooWithInheritence/Zoo/Zoo/target/
+/ws/ayuquina/u2/ws24/ws25GUI/target/
+/ws/ayuquina/u2/ws24/Zoo/Zoo/target/
+/ws/ayuquina/u2/ws24ZOO/Zoo/Zoo/target/
+=======
+/hw/CEDENOR/U2/hw15/MongoConnection/nbproject/private/
+/hw/CEDENOR/U2/hw15/MongoConnection/build/
+/ws/cedenor/U2/WS23UnitTest/ComplitexOperations/target/
+>>>>>>> 13dc3be64f8b14688cbb3f18204fc26b63eef73b
+/ws/villagomez/u2/ws25GUI/ws25GUI/target/
+>>>>>>> 5179f3faa7881f40ff2715e10aab9fa6583b5c80
+>>>>>>> ba28cdc8a3c788cd73eaebc7927a2b1e1960f7be
