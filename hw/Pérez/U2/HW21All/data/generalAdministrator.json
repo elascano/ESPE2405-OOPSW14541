@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1526483601,
+    "name": "Petronio Segarra",
+    "email": "psegarra70@gmail.com",
+    "password": "P70",
+    "grade": "Colonel",
+    "type": "generalAdministrator",
+    "balance": 70.0
+  }
+]
