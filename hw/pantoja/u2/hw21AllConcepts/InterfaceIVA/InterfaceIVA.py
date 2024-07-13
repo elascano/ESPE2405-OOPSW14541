@@ -2,6 +2,9 @@ import tkinter as tk
 from tkinter import messagebox
 from pymongo import MongoClient
 import re
+import time
+
+# David Pantoja, JavaSquad, DCCO-ESPE
 
 # Configuración de MongoDB
 client = MongoClient("mongodb+srv://cdpantoja2:pantoja@cluster0.uqhoeh0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -11,10 +14,24 @@ collection = db["InterfaceIVA"]
 # Configuración de la tasa de IVA
 IVA_RATE = 0.15
 
+# Credenciales de usuario
+VALID_USERNAME = "admin"
+VALID_PASSWORD = "admin123"
+
 class BillingSystemApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Billing System")
+
+        # Crear menú
+        self.menu = tk.Menu(self.root)
+        self.root.config(menu=self.menu)
+        self.file_menu = tk.Menu(self.menu, tearoff=0)
+        self.menu.add_cascade(label="Archivo", menu=self.file_menu)
+        self.file_menu.add_command(label="Salir", command=self.root.quit)
+        self.help_menu = tk.Menu(self.menu, tearoff=0)
+        self.menu.add_cascade(label="Ayuda", menu=self.help_menu)
+        self.help_menu.add_command(label="Acerca de")
 
         # Variables
         self.tipo_documento = tk.StringVar(value="Cedula")
@@ -145,9 +162,53 @@ class BillingSystemApp:
         except Exception as e:
             messagebox.showerror("Error", f"Ha ocurrido un error: {e}")
 
-if __name__ == "__main__":
+class LoginScreen:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Login")
+
+        self.username = tk.StringVar()
+        self.password = tk.StringVar()
+
+        tk.Label(root, text="Username").grid(row=0, column=0)
+        tk.Entry(root, textvariable=self.username).grid(row=0, column=1)
+        tk.Label(root, text="Password").grid(row=1, column=0)
+        tk.Entry(root, textvariable=self.password, show='*').grid(row=1, column=1)
+
+        tk.Button(root, text="Login", command=self.login).grid(row=2, column=0, columnspan=2)
+
+    def login(self):
+        if self.username.get() == VALID_USERNAME and self.password.get() == VALID_PASSWORD:
+            self.root.destroy()
+            main()
+        else:
+            messagebox.showerror("Error", "Username o Password incorrectos")
+
+class SplashScreen:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Splash Screen")
+        self.root.geometry("300x200")
+        tk.Label(root, text="Bienvenido al Sistema de Facturación", font=("Helvetica", 16)).pack(expand=True)
+        root.after(3000, self.close_splash)
+
+    def close_splash(self):
+        self.root.destroy()
+        self.show_login()
+
+    def show_login(self):
+        login_root = tk.Tk()
+        LoginScreen(login_root)
+        login_root.mainloop()
+
+def main():
     root = tk.Tk()
     app = BillingSystemApp(root)
     root.mainloop()
+
+if __name__ == "__main__":
+    splash_root = tk.Tk()
+    splash = SplashScreen(splash_root)
+    splash_root.mainloop()
 
 
