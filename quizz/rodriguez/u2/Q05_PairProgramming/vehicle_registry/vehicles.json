@@ -1,0 +1,29 @@
+[
+    {
+        "license_plate": "ABC1234",
+        "model": "Civicc",
+        "brand": "Honda",
+        "year": 2020,
+        "price": 25000.0,
+        "type": "Car",
+        "numberOfDoors": 4
+    },
+    {
+        "license_plate": "XYZ5678",
+        "model": "F-150",
+        "brand": "Ford",
+        "year": 2022,
+        "price": 40000.0,
+        "type": "Truck",
+        "loadCapacity": 2000.0
+    },
+    {
+        "license_plate": "WPX7531",
+        "model": "Supra MK4",
+        "brand": "Toyota",
+        "year": 2018,
+        "price": 2500.0,
+        "type": "Truck",
+        "loadCapacity": 2500.0
+    }
+]
