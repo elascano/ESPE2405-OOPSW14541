@@ -1,63 +1,52 @@
 from tkinter import *
-from tkinter import ttk
-from progressbar import *
-# crear Ventana principa
+from tkinter.ttk import Progressbar
+import sys
+import Menu
+import os
+
 root=Tk()
 
-root.overrideredirect(True)
+image=PhotoImage(file ='ec_edu_espe_megasoft_view\\dev-dynasty.png')
 
-width=int(root.winfo_screenwidth()//1.5)
-height = int(root.winfo_screenheight()//1.5)
-#posicionar ventana al centro
+height= 653
+width = 736
+x = (root.winfo_screenwidth()//2)-(width//2)
+y = (root.winfo_screenheight()//2)-(height//2)
+root.geometry('{}x{}+{}+{}'.format(width, height, x, y))
+root.overrideredirect(1)
 
-pwidht = round(root.winfo_screenwidth()//2-width//2)
-pheigth = round(root.winfo_screenheight()//2-height//2)
-#dar tamaño a la ventana
+root.wm_attributes('-topmost', True)
+root.lift()
+root.wm_attributes("-topmost", True)
+root.wm_attributes("-disabled", True)
+root.wm_attributes("-transparentcolor", "while")
 
-root.geometry('{}x{}+{}+{}'.format(width,height,pwidht,pheigth))
-# crear un frame para el titulo
-fr_titulo=Frame(root)
-fr_titulo.config(background='white')
-fr_titulo.config(border='40')
-fr_titulo.config(relief='sunken')
-fr_titulo.pack(fill='x')
-lb_titulo=Label(fr_titulo,text="Bienvenidos a Mega Soft",font="verdana 30 bold")
-lb_titulo.config(background='white',foreground='black')
-lb_titulo.pack(anchor=CENTER)
-#frame para imagen
+bg_label=Label(root, image=image ,bg='while')
+bg_label.place(x=0,y=0)
 
-#frame pie de ventana
-fr_piepagina=Frame(root)
-fr_piepagina.config(background="grey",relief='sunken')
-fr_piepagina.pack()
+progress_label= Label(root, text="Cargando...", font=('Comic Sans MS',13,'bold'),fg='#14183e',bg='#71b3ef')
+progress_label.place(x=200,y=450)
+progress=Progressbar(root, orient=HORIZONTAL, length=360, mode='determinate')
+progress.place(x=200,y=480)
 
-#progressbar
-prgbar_loading = ttk.Progressbar(fr_piepagina)
-prgbar_loading.config(length=width)
-prgbar_loading.start(interval=100)
-prgbar_loading.pack(anchor=CENTER)
-
-lb_cargando=Label(fr_piepagina, text="Cargnado el sistema...",anchor='sw')
-lb_cargando.config(foreground='white', font='Verdana 12 bold',width=width)
-lb_cargando.pack()
-
-def main():
-    prgbar_loading.stop()
+def top():
+    root.withdraw()
+    os.system("python Menu.py")
     root.destroy()
-    
-    ventana_principal=Tk()
 
-    ancho=ventana_principal.winfo_screenwidth()
-    alto=ventana_principal.winfo_screenheight()
-    ventana_principal.geometry('{}x{}'.format(ancho,alto))
-    lb_mensaje=Label(ventana_principal,text=' Mega Soft',font='Verdana 20 bold')
-    lb_mensaje.config(foreground='grey',background='black')
-    lb_mensaje.pack()
+i = 0
 
-    lb_ingreso=Label(ventana_principal,text=' Desea ingresar como Administrador o como Usuario',font='Verdana 20 bold')
-    lb_ingreso.config(foreground='grey',background='black')
-    lb_ingreso.pack()
+def load():
+    global i
+    if i<=10:
+        texto='Cargando...'+ (str(10*i)+'%')
+        progress_label.config(text=texto)
+        progress_label.after(1000, load)
+        progress['value']=10*i
+        i+=1
+    else:
+        top()
 
-    texto = Entry(width=20, font=('Arial',14))
-root.after(6000,main)
-mainloop()
+load()
+
+root.mainloop()
