@@ -1,0 +1,59 @@
+import json
+
+class Librarian:
+    def __init__(self, id, username, password):
+        self.id = id
+        self.username = username
+        self.password = password
+        self.books = []
+
+    def addBook(self, book):
+        # Implementación de la función para agregar un libro
+        self.books.append(book)
+        print(f"El libro '{book.title}' ha sido agregado correctamente.")
+
+    def removeBook(self, book):
+        # Implementación de la función para eliminar un libro
+        if book in self.books:
+            self.books.remove(book)
+            print(f"El libro '{book.title}' ha sido eliminado correctamente.")
+        else:
+            print("El libro no está en la lista de libros.")
+
+    def editBook(self, book, new_title, new_author):
+        # Implementación de la función para editar un libro
+        book.title = new_title
+        book.author = new_author
+        print(f"El libro '{book.title}' ha sido editado correctamente.")
+
+    def editGenre(self, bookShelf, book, new_genre):
+        # Implementación de la función para editar el género en un BookShelf
+        if book in bookShelf.books:
+            book.genre = new_genre
+            print(f"El género del libro '{book.title}' ha sido actualizado a '{new_genre}'.")
+        else:
+            print("El libro no está en este estante.")
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "password": self.password,
+            "books": [book.to_dict() for book in self.books]
+        }
+
+    @staticmethod
+    def from_dict(data):
+        librarian = Librarian(data["id"], data["username"], data["password"])
+        librarian.books = [Book.from_dict(book) for book in data["books"]]
+        return librarian
+
+    def save_to_file(self, filename):
+        with open(filename, 'w') as file:
+            json.dump(self.to_dict(), file, indent=4)
+        print(f"Datos guardados en {filename}")
+
+    @staticmethod
+    def load_from_file(filename):
+        with open(filename, 'r') as file:
+            data = json.load(file)
+        return Librarian.from_dict(data)

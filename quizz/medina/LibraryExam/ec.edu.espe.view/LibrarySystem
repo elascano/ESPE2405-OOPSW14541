@@ -1,0 +1,41 @@
+class LibrarySystem:
+    def __init__(self):
+        self.librarians = []
+        self.bookshelves = []
+
+    def addLibrarian(self, librarian):
+        # Agregar un bibliotecario al sistema
+        self.librarians.append(librarian)
+        print(f"Bibliotecario {librarian.username} agregado al sistema.")
+
+    def addBookShelf(self, bookShelf):
+        # Agregar un estante de libros al sistema
+        self.bookshelves.append(bookShelf)
+        print(f"Estante de libros '{bookShelf.nameShelf}' agregado al sistema.")
+
+    def printLibrarians(self):
+        # Imprimir la lista de bibliotecarios en el sistema
+        print("Lista de Bibliotecarios:")
+        for librarian in self.librarians:
+            print(f"ID: {librarian.id}, Username: {librarian.username}")
+
+    def printBookShelves(self):
+        # Imprimir la lista de estantes de libros en el sistema
+        print("Lista de Estantes de Libros:")
+        for bookShelf in self.bookshelves:
+            print(f"Nombre del Estante: {bookShelf.nameShelf}")
+
+# Crear una instancia de LibrarySystem y probar las funciones
+library_system = LibrarySystem()
+
+# Agregar bibliotecarios al sistema
+librarian1 = Librarian(1, "admin", "password")
+library_system.addLibrarian(librarian1)
+
+# Agregar estantes de libros al sistema
+bookShelf1 = BookShelf("Shelf1")
+library_system.addBookShelf(bookShelf1)
+
+# Imprimir la lista de bibliotecarios y estantes de libros en el sistema
+library_system.printLibrarians()
+library_system.printBookShelves()

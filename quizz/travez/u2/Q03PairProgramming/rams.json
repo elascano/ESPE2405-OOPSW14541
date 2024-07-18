@@ -1,0 +1,5 @@
+[
+    {"name": "8GB", "price": 50, "velocity": 1600},
+    {"name": "4GB", "price": 30, "velocity": 2133},
+    {"name": "16GB", "price": 100, "velocity": 2666}
+]

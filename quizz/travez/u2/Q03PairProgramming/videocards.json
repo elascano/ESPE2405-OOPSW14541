@@ -1,0 +1,5 @@
+[
+    {"name": "rtx3060", "price": 400, "vram": 12},
+    {"name": "rtx4060", "price": 500, "vram": 16},
+    {"name": "gtx1660", "price": 300, "vram": 6}
+]
