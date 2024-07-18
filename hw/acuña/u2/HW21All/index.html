@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tutores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="tutorForm">
+        <label for="cedula">Cedula:</label>
+        <input type="text" id="cedula" name="cedula"><br>
+        
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres"><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br>
+        
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" readonly><br>
+        
+        <label for="codigoCarrera">Código de Carrera:</label>
+        <select id="codigoCarrera" name="codigoCarrera">
+            <option value="14541">14541</option>
+            <option value="14534">14534</option>
+            <option value="14610">14610</option>
+            <option value="14546">14546</option>
+        </select><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular"><br>
+        
+        <button type="submit" id="guardar">Guardar</button>
+        <button type="button" id="regresar">Regresar</button>
+        <button type="button" id="salir">Salir</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

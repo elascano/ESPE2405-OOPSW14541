@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espe.complexoperations.controler.PersonControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.152 s <<< FAILURE! -- in ec.edu.espe.complexoperations.controler.PersonControllerTest
+ec.edu.espe.complexoperations.controler.PersonControllerTest.testComputeAgeInDays -- Time elapsed: 0.089 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDate.until(java.time.chrono.ChronoLocalDate)" because "startDateInclusive" is null
+	at java.base/java.time.Period.between(Period.java:389)
+	at ec.edu.espe.complexoperations.controler.PersonController.computeAgeInDays(PersonController.java:16)
+	at ec.edu.espe.complexoperations.controler.PersonControllerTest.testComputeAgeInDays(PersonControllerTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ec.edu.espe.complexoperations.controler.PersonControllerTest.testComputeAgeInYears -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDate.until(java.time.chrono.ChronoLocalDate)" because "startDateInclusive" is null
+	at java.base/java.time.Period.between(Period.java:389)
+	at ec.edu.espe.complexoperations.controler.PersonController.computeAgeInYears(PersonController.java:24)
+	at ec.edu.espe.complexoperations.controler.PersonControllerTest.testComputeAgeInYears(PersonControllerTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
