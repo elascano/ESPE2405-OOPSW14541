@@ -2,7 +2,7 @@ package ec.edu.espe.zoo.model;
 
 /**
  *
- * @author David Morillo, JavaSquad, DCCO-ESPE
+ * @author Domenica Villagomez, CommitCrew, DCCO-ESPE
  */
 public class Cage {
     private int id;
