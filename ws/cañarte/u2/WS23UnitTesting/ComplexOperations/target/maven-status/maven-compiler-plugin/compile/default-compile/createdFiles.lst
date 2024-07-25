@@ -1,0 +1,4 @@
+ec\edu\espe\complexoperation\controller\PersonController.class
+ec\edu\espe\complexoperation\model\ComplexOperations.class
+ec\edu\espe\complexoperation\view\OperationPrinting.class
+ec\edu\espe\complexoperation\controller\Operation.class
