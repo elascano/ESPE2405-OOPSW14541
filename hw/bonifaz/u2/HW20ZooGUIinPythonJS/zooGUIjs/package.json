@@ -1,0 +1,12 @@
+{
+  "name": "animal-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.2.0"
+  }
+}
