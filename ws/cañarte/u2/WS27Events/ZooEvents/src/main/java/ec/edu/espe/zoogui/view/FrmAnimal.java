@@ -203,6 +203,11 @@ public class FrmAnimal extends javax.swing.JFrame {
         });
 
         btnFeed.setText("Feed");
+        btnFeed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFeedActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -286,6 +291,10 @@ public class FrmAnimal extends javax.swing.JFrame {
     private void sldNumberOfBonesStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldNumberOfBonesStateChanged
         lblNumberOfBones.setText(String.valueOf(sldNumberOfBones.getValue()));
     }//GEN-LAST:event_sldNumberOfBonesStateChanged
+
+    private void btnFeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFeedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFeedActionPerformed
 
     /**
      * @param args the command line arguments
