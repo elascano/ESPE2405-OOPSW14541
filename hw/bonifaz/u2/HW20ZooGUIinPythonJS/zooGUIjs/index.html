@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animals</h1>
+        <form id="animalForm">
+            <label for="id">Id</label>
+            <input type="number" id="id" name="id" value="1">
+
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" value="It is big">
+
+            <label for="bornOnDate">Born on date</label>
+            <input type="date" id="bornOnDate" name="bornOnDate">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+
+            <label for="cage">Cage</label>
+            <select id="cage" name="cage">
+                <option value="lion_cage">Lion cage</option>
+            </select>
+
+            <label for="numberOfBones">Number of bones</label>
+            <input type="range" id="numberOfBones" name="numberOfBones" min="0" max="300">
+
+            <label for="vertebrate">Vertebrate</label>
+            <input type="checkbox" id="vertebrate" name="vertebrate" checked>
+
+            <label for="food">Food</label>
+            <select id="food" name="food" multiple>
+                <option value="rabbit">rabbit</option>
+                <option value="mouse">mouse</option>
+                <option value="fish">fish</option>
+                <option value="meat">meat</option>
+            </select>
+
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

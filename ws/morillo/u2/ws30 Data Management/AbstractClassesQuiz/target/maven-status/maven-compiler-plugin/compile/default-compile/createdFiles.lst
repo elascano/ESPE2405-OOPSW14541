@@ -1,0 +1,7 @@
+utils\DataManager.class
+utils\FileManager.class
+utils\CsvManager.class
+utils\Table.class
+utils\XmlManager.class
+ec\edu\espe\abstractclassesquiz\AbstractClassesQuiz.class
+utils\JsonManager.class
