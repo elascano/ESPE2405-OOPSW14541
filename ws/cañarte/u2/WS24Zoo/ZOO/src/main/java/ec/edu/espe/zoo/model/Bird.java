@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  *
- * @author David Morillo, JavaSquad, DCCO-ESPE
+ * @author Saray Cañarte, codecreators, DCCO - ESPE
  */
 public abstract class Bird extends Animal {
 
