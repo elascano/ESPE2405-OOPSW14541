@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1516141917,
+    "name": "Maria Diaz",
+    "email": "maria@gmail.com",
+    "password": "Lola",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 60.0
+  },
+  {
+    "id": 1753597796,
+    "name": "Ismael Travez",
+    "email": "ismael@gmail.com",
+    "password": "123",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 60.0
+  },
+  {
+    "id": 1635294817,
+    "name": "Pepe",
+    "email": "pepe@gmail.com",
+    "password": "pepe123",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 20.0
+  },
+  {
+    "id": 1936251847,
+    "name": "Pablo Sanchez",
+    "email": "pablo@hotmail.com",
+    "password": "pablo123",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 0.0
+  },
+  {
+    "id": 1635290428,
+    "name": "Marco",
+    "email": "marco@hotmail.com",
+    "password": "marco123",
+    "grade": "Lieutenant",
+    "type": "commensals",
+    "balance": 0.0
+  },
+  {
+    "id": 1752874568,
+    "name": "Carlos Perez",
+    "email": "carlospe0505@gmail.com",
+    "password": "carlitos24",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 0.0
+  },
+  {
+    "id": 1726440538,
+    "name": "David Rodriguez",
+    "email": "david2@hotmail.com",
+    "password": "123456",
+    "grade": "publicServant",
+    "type": "commensals",
+    "balance": 0.0
+  }
+]
