@@ -1,0 +1,42 @@
+import tkinter as tk
+from tkinter import ttk
+from pymongo import MongoClient
+
+class LoginInterface(tk.Tk):
+    def _init_(self):
+        super()._init_()
+        self.title("Sistema de Contribuyentes - Inicio de Sesión")
+        self.geometry("300x200")
+        self.resizable(False, False)
+
+        self.uri = "mongodb+srv://canarte:canarte@cluster0.devwm9s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        self.client = MongoClient(self.uri)
+        self.db = self.client['cyberplaneta_pricingsystem']
+        self.users_collection = self.db['prom_taxes']
+
+        
+        self.username_label = ttk.Label(self, text="Usuario:")
+        self.username_entry = ttk.Entry(self)
+        self.password_label = ttk.Label(self, text="Contraseña:")
+        self.password_entry = ttk.Entry(self, show="*")
+        self.login_button = ttk.Button(self, text="Iniciar Sesión", command=self.login)
+
+        # widgets en la interfaz #NO TOCAR
+        self.username_label.pack(pady=10)
+        self.username_entry.pack(pady=5)
+        self.password_label.pack(pady=10)
+        self.password_entry.pack(pady=5)
+        self.login_button.pack(pady=20)
+
+    def login(self):
+        username = self.username_entry.get()
+        password = self.password_entry.get()
+
+        if username == "scurpin" and password == "1214":
+            print("Inicio de sesión exitoso")
+        else:
+            print("Credenciales inválidas")
+
+if _name_ == "_main_":
+    app = LoginInterface()
+    app.mainloop()
