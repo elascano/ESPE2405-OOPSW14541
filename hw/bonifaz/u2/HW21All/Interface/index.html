@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Contribuyente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Contribuyente</h1>
+        <form id="contributorForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" placeholder="RUC del contribuyente">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Correo del contribuyente">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Nombre del contribuyente">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password">
+            <label for="documentation">Documentación:</label>
+            <input type="checkbox" id="documentation">
+            <label for="startDate">Fecha de inicio del proceso:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">Fecha de fin del proceso:</label>
+            <input type="date" id="endDate">
+            <label for="remainingDays">Días restantes:</label>
+            <input type="text" id="remainingDays" readonly>
+            <button type="button" onclick="calculateDays()">Calcular días</button>
+            <button type="button" onclick="addContributor()">Agregar</button>
+        </form>
+        <button onclick="goBack()">Regresar</button>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
+

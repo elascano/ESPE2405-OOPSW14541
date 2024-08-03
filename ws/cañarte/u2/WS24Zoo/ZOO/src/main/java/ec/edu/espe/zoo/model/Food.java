@@ -6,7 +6,7 @@ package ec.edu.espe.zoo.model;
 
 /**
  *
- * @author David Morillo, JavaSquad, DCCO-ESPE
+ * @author Saray Cañarte, codecreators, DCCO - ESPE
  */
 public class Food {
     private int id;
