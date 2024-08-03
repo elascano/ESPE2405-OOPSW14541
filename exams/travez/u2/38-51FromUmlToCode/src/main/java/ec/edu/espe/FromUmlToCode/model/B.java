@@ -10,4 +10,8 @@ package ec.edu.espe.FromUmlToCode.model;
  */
 public class B extends A{
     
+    public B(A a) {
+        super(a);
+    }
+    
 }

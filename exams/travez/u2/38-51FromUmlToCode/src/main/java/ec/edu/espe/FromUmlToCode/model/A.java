@@ -13,6 +13,10 @@ import java.util.ArrayList;
 public class A{
     private A a;
 
+    public A(A a) {
+        this.a = a;
+    }
+
     /**
      * @return the a
      */
