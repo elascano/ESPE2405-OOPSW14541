@@ -8,6 +8,6 @@ package ec.edu.espe.FromUmlToCode.model;
  *
  * @author G406
  */
-public class F {
+public class F { //1
     
 }

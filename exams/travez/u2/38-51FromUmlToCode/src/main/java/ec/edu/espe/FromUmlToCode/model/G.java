@@ -8,6 +8,6 @@ package ec.edu.espe.FromUmlToCode.model;
  *
  * @author G406
  */
-public class G {
+public class G implements H{//1
     
 }
