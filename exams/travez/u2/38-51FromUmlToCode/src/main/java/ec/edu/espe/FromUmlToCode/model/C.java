@@ -19,17 +19,4 @@ public class C extends A{
         super(a);
     }
     
-    public C() {
-        eList = new ArrayList<>();
-    }
-
-    public void addE(E e) {
-        if (eList.size() < 3) {
-            eList.add(e);
-        }
-    }
-
-    public List<E> getEList() {
-        return eList;
-    }
 }
