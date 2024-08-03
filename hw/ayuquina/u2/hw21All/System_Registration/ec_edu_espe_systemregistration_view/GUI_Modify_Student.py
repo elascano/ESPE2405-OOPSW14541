@@ -198,17 +198,17 @@ class SistemaMatriculas(tk.Tk):
 # Unidad de test cases
 class TestSistemaMatriculas(unittest.TestCase):
     def test_estudiante(self):
-        estudiante = Estudiante("1234567890", "Danny", "Mateo", "123", "danny@example.com", "0999999999", "PRIMERA", 15, 0, 15)
+        estudiante = Estudiante("17532698", "Danny", "Mateo", "14dfx", "danny@gmail.com", "226-201", "PRIMERA", 15, 0, 15)
         self.assertEqual(estudiante.get_full_name(), "Danny Mateo")
         self.assertFalse(estudiante.is_supletorio_required())
         self.assertEqual(estudiante.nota_final, 15)
 
-        estudiante = Estudiante("1234567890", "Danny", "Mateo", "123", "danny@example.com", "0999999999", "PRIMERA", 12, 16, 14)
+        estudiante = Estudiante("175326985001", "Danny", "Mateo", "14543", "danny@hotmail.com", "0987326319", "segunda", 12, 16, 14)
         estudiante.calculate_nota_final()
         self.assertEqual(estudiante.nota_final, 14)
 
     def test_persona(self):
-        persona = Persona("1234567890", "Danny", "Mateo", "danny@example.com", "0999999999")
+        persona = Persona("17532698", "Danny", "Mateo", "14dfx", "danny@gmail.com", "226-201")
         self.assertEqual(persona.get_full_name(), "Danny Mateo")
 
 if __name__ == "__main__":

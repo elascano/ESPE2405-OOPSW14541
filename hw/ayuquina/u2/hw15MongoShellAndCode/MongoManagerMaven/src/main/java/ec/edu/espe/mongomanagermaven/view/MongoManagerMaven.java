@@ -15,30 +15,19 @@ import org.bson.Document;
 public class MongoManagerMaven {
 
     public static void main(String[] args) {
-
-        String uri = "mongodb+srv://ayuquina:ayuquina@cluster0.crwllgh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
-        MongoDatabase dataBase = openConnectionToMongo(uri);
+        MongoDatabase dataBase = openConnectionToMongo();
 
         String collection = "Students";
         MongoCollection<Document> mongoCollection = accessToCollections(dataBase, collection);
 
-        System.out.println(mongoCollection);
-//      editDocuments("name", "Rodrigo", "Santi", mongoCollection);
+        editDocumentsForString("id", "1753093093", "name", "Danny", "Danny Mateo",  mongoCollection);
+        editDocumentsForString("id", "1753093093","lastname", "Ayuquina", "Ayuquina Navas", mongoCollection);
 
-//      InsertManyData
-//      List<Document> listOfData = new ArrayList<>();
-//      listOfData.add(new Document().append("id","L00000099").append("name", "Danna").append("male",false).append("siblings",1));
-//      listOfData.add(new Document().append("id","L00000022").append("name", "Jorge").append("male",true).append("siblings",3));
-//        
-//      insertMoreThanOneData(listOfData, mongoCollection);
-//      InsertOneData  
-//      Document data = new Document().append("id", "L00111188").append("name", "Pamela").append("male", false).append("siblings", 2);
-//      insertOneData(data, mongoCollection);
     }
 
     //Abir conexión con mongoDB
-    public static MongoDatabase openConnectionToMongo(String uri) {
+    public static MongoDatabase openConnectionToMongo() {
+        String uri = "mongodb+srv://ayuquina:ayuquina@cluster0.crwllgh.mongodb.net/";
         MongoClient mongoClient = MongoClients.create(uri);
         MongoDatabase dataBase = mongoClient.getDatabase("OOP");
 
@@ -68,31 +57,46 @@ public class MongoManagerMaven {
         //Document findDocument = new Document();
 
         MongoCursor<Document> resultDocument = mongoCollection.find(findDocument).iterator();
-        
+
         System.out.println("***************************************");
         System.out.println("People male");
         System.out.println("***************************************");
         while (resultDocument.hasNext()) {
             System.out.println(resultDocument.next().getString("name"));
         }
-        
+
         //return resultDocument;
     }
-    
+
     //Actualización de documentos
-    public static void editDocuments(String key, String data,String newData, MongoCollection<Document> mongoCollection){
-        Document findDocument = new Document(key,data);
-        
-        Document updateDocument = new Document("$set",new Document(key,newData));
-        
+    public static void editDocumentsForString(String idKey, String id, String key, String data, String newData, MongoCollection<Document> mongoCollection) {
+        Document findDocument = new Document(idKey, id);
+
+        Document updateDocument = new Document("$set", new Document(key, newData));
+
         mongoCollection.findOneAndUpdate(findDocument, updateDocument);
     }
-    
-    
+    public static void editDocumentsForFloars(String idKey, String id, String key, float data, float newData, MongoCollection<Document> mongoCollection) {
+        Document findDocument = new Document(idKey, id);
+
+        Document updateDocument = new Document("$set", new Document(key, newData));
+
+        mongoCollection.findOneAndUpdate(findDocument, updateDocument);
+    }
+
     //Eliminar documentos
-    public static void deleteDocuments(String key, String data, MongoCollection<Document> mongoCollection){
+    public static void deleteDocuments(String key, String data, MongoCollection<Document> mongoCollection) {
         //TODO: Combinar con método de obtención de datos
         Document findDocument = new Document("male", true);
         mongoCollection.findOneAndDelete(findDocument);
     }
 }
+//      InsertManyData
+//      List<Document> listOfData = new ArrayList<>();
+//      listOfData.add(new Document().append("id","L00000099").append("name", "Danna").append("male",false).append("siblings",1));
+//      listOfData.add(new Document().append("id","L00000022").append("name", "Jorge").append("male",true).append("siblings",3));
+//        
+//      insertMoreThanOneData(listOfData, mongoCollection);
+//      InsertOneData  
+//      Document data = new Document().append("id", "L00111188").append("name", "Pamela").append("male", false).append("siblings", 2);
+//      insertOneData(data, mongoCollection);
