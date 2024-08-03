@@ -1,0 +1,4 @@
+com\mycompany\complexoperations\view\ComplexOperations.class
+com\mycompany\complexoperations\view\OperationPrinting.class
+com\mycompany\complexoperations\controller\Operation.class
+com\mycompany\complexoperations\controller\PersonController.class
