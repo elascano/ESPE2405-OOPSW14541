@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Especialidades Amanecer Dorado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CLÍNICA DE ESPECIALIDADES AMANECER DORADO</h1>
+        <button id="add-appointment-btn">AÑADIR NUEVA CITA</button>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Información del Paciente</h2>
+                <label for="cedula">Número de Cédula:</label>
+                <input type="text" id="cedula" name="cedula">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+            </div>
+            <div>
+                <h2>Información de la Cita</h2>
+                <label for="especialidad">Especialidad:</label>
+                <select id="especialidad" name="especialidad">
+                    <option value="Médico General">Médico General</option>
+                    <!-- Agregar más especialidades aquí -->
+                </select>
+                <label for="doctores">Doctores Disponibles:</label>
+                <select id="doctores" name="doctores">
+                    <option value="Dra. Samantha Villagómez">Dra. Samantha Villagómez</option>
+                    <!-- Agregar más doctores aquí -->
+                </select>
+                <label for="fecha-cita">Fecha de la Cita:</label>
+                <input type="date" id="fecha-cita" name="fecha-cita">
+            </div>
+        </section>
+        <section>
+            <h2>Citas Agendadas</h2>
+            <ul id="appointments">
+                <!-- Aquí se mostrarán las citas agendadas -->
+            </ul>
+        </section>
+    </main>
+    <script src="view/Project.js"></script>
+</body>
+</html>

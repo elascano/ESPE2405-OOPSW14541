@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d0e7ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-icon, .icons .icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.add-appointment {
+    background-color: #77b3ff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.info-box {
+    background-color: #e7efff;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-box h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
