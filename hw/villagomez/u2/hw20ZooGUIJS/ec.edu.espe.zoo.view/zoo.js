@@ -21,10 +21,8 @@ function registerAnimal() {
     console.log('Vertebrate:', vertebrate);
     console.log('Food:', food);
 
-    // Add more logic here, like sending data to a server
 }
 
 function feedAnimal() {
-    // Implement feeding logic here
     alert("Animal has been fed!");
 }
