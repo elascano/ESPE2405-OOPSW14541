@@ -1,0 +1,15 @@
+model\Animal.class
+model\Tiguer.class
+model\Primate.class
+model\Shark.class
+model\Lion.class
+model\Mammal.class
+model\Condor.class
+model\Monkey.class
+model\Cage.class
+model\Food.class
+model\Bird.class
+model\Fish.class
+com\mycompany\zoo\view\Zoo.class
+model\Eagle.class
+model\Feline.class
