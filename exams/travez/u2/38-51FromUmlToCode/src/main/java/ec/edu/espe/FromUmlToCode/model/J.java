@@ -9,5 +9,5 @@ package ec.edu.espe.FromUmlToCode.model;
  * @author G406
  */
 public class J {
-    
+    private G g;
 }

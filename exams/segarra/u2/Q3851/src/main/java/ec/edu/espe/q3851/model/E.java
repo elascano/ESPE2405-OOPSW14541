@@ -2,17 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ec.edu.espe.FromUmlToCode.model;
+package ec.edu.espe.q3851.model;
 
 /**
  *
- * @author G406
+ * @author Eduardo Segarra, TheJavaBandits, DCCO-ESPE
  */
-public class D extends A{
-    
-    public D(A a) {
-        super(a);
-    }
-    
+public class E {
     
 }
