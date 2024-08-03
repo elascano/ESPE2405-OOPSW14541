@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .form-group button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+        .student-list {
+            margin-top: 20px;
+        }
+        .student-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <div class="form-group">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+        </div>
+        <div class="form-group">
+            <label for="studentCourse">Course:</label>
+            <select id="studentCourse">
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Art">Art</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="courseProfessor">Professor:</label>
+            <select id="courseProfessor">
+                <option value="Prof. Smith">Prof. Smith</option>
+                <option value="Prof. Johnson">Prof. Johnson</option>
+                <option value="Prof. Williams">Prof. Williams</option>
+                <option value="Prof. Brown">Prof. Brown</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button onclick="registerStudent()">Register</button>
+        </div>
+        <div class="student-list" id="studentList">
+            <h2>Registered Students</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
