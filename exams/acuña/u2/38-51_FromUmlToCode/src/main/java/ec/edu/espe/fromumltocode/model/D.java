@@ -10,9 +10,10 @@ import java.util.ArrayList;
  *
  */
 
-public class D extends A{
-    private ArrayList<F> f;
+public class D extends A{ //0.5
+    private ArrayList<F> f; //0.25
     
+    //0.1
     public D(){
     
     }

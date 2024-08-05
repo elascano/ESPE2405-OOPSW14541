@@ -7,6 +7,6 @@ package ec.edu.espe.fromumltocode.model;
  * @author Marcelo Acuña 
  *
  */
-public class J {
+public class J { //1
 
 }

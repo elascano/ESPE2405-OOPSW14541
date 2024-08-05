@@ -8,7 +8,7 @@ package com.mycompany.exam2alexisviteri;
  *
  * @author G406
  */
-public abstract class H {
+public abstract class H { //0
 
     public H() {
     }
