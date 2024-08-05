@@ -1,3 +1,4 @@
+
 # Compiled class file
 *.class
 
@@ -23,11 +24,7 @@
 
 /ws/arboleda/u1/WS15ReferenceDt/PrimitiveData/nbproject/private/
 /ws/arboleda/u1/WS09PrimitiveData/PrimitiveData/build/
-/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/nbproject/private/
-/ws/villagomez/u1/ws08FromClassDiagramToCode/ChickenFarmSimulator2/build/
-/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/nbproject/private/
-/ws/villagomez/u1/ws08FromClassDiagramToCode/AntSimulator/build/
-/hw/villagomez/u1/hw10_ChickenFile/ChickenFarmSimulator2/nbproject/private/
+
 /ws/lisintuña/u1/ws11/nbproject/private/
 /ws/lisintuña/u1/ws11/ws11/nbproject/private/
 /ws/lisintuña/u1/ws11/Collection.java/nbproject/private/
@@ -116,6 +113,39 @@ HEAD
 
 c0f56bfc46b59c00e80dd960ebf863d24c451dac
 a8299d1cd1e8c649fb8bde993b47cc32bd48683f
+<<<<<<< HEAD
 /hw/marquez/u2/New Folder/JavaWhithMongoDB/nbproject/private/
 /hw/marquez/u2/New Folder/JavaWhithMongoDB/build/
 /ws/marquez/u2/New Folder/Zoo/target/
+=======
+/hw/CEDENOR/U2/hw15/MongoConnection/nbproject/private/
+/hw/CEDENOR/U2/hw15/MongoConnection/build/
+/ws/cedenor/U2/WS23UnitTest/ComplitexOperations/target/
+<<<<<<< HEAD
+/ws/cedenor/U2/WS25/Zoo2/target/
+=======
+>>>>>>> 5179f3faa7881f40ff2715e10aab9fa6583b5c80
+<<<<<<< HEAD
+/ws/ayuquina/u2/ws26/RegystrationSystem/target/
+=======
+>>>>>>> ba28cdc8a3c788cd73eaebc7927a2b1e1960f7be
+>>>>>>> ef8e35a916af55ffcbd886e4e64e1e10cf883472
+/ws/ayuquina/u2/ws30Interfaces/AbstractClassesQuiz/target/
+=======
+/ws/morillo/u2/ws25 GUI/Zoo/target/
+<<<<<<< HEAD
+/ws/morillo/u2/ws30 Interfaces/AbstractClassesQuiz/target/
+=======
+>>>>>>> f5654dcd9318c50c162cd2e6781045b52dd7329e
+<<<<<<< HEAD
+/quizz/ayuquina/u2/Q1Formlue/Formue/nbproject/
+/quizz/ayuquina/u2/Q1Formlue/Formue/target/
+=======
+>>>>>>> 04ee14fd2b0d47e275fe1151b086b22f25d9e7ec
+>>>>>>> 69d728eb2ea2519781ccd5dbfe4aa40193c9f15f
+>>>>>>> 1ce291a3dbf2e8c19f0318e40d691f2ee34bfbd4
+/hw/cedenor/U2/HW17TestCaseSolution/ComplexOperations/nbproject/
+>>>>>>> 4c14bcefe6819b94098812941b3a2e7b27297f06
+>>>>>>> b713e044353a5fde61d3fcd19677ae27d8ead178
+/exams/segarra/u2/Q6170/target/
+>>>>>>> 6222a861e1bcf6d307547346cc0af8ce41c67c7b

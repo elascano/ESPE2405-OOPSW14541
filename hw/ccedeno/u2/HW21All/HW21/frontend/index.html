@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda por Noveno Dígito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Búsqueda por Noveno Dígito</h1>
+        <label for="ninthDigit">n°:</label>
+        <input type="text" id="ninthDigit" placeholder="Noveno dígito">
+        <div class="buttons">
+            <button onclick="goBack()">Regresar</button>
+            <button onclick="searchNinthDigit()">Buscar</button>
+        </div>
+        <div class="results" id="results">
+            <p>Lista:</p>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Mostrar lista de contribuyentes predefinidos al cargar la página
+        document.addEventListener('DOMContentLoaded', (event) => {
+            displayPredefinedTaxPayers();
+        });
+    </script>
+</body>
+</html>

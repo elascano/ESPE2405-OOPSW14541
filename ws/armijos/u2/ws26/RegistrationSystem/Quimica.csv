@@ -1,0 +1,50 @@
+Dni=Cedula
+Nombre :Nombre
+Apellido : Apellido
+Codigo de carrera :Codigo de Carrera
+Email : Email
+Telefono : Celular
+Tipo de matricula : Tipo de Matricula
+Nota : Calificacion
+Supletorio : Supletorio
+Gratuity : Gratuidad
+Dni=1850598010
+Nombre :Marcelo
+Apellido : Acuña
+Codigo de carrera :145662
+Email : cmacuna@espe.com
+Telefono : 0998025146
+Tipo de matricula : SEGUNDA
+Nota : 15.0
+Supletorio : No requiere supletorio
+Gratuity : Sin Gratuidad
+Dni=1734679845
+Nombre :Enzo Alberto 
+Apellido : Armijos Macas
+Codigo de carrera :15246
+Email : earmijos@gmail.com
+Telefono : 0987564123
+Tipo de matricula : SEGUNDA
+Nota : 18
+Supletorio : 0
+Gratuity : Sin Gratuidad
+Dni=1724122427
+Nombre :Abner David
+Apellido : Arboleda Ruman
+Codigo de carrera :12345
+Email : ad@gmail.com
+Telefono : 0995317959
+Tipo de matricula : SEGUNDA
+Nota : 14.5
+Supletorio : 0
+Gratuity : Sin Gratuidad
+Dni=1753093093
+Nombre :Danny Mateo
+Apellido : Ayuquina Navas
+Codigo de carrera :14541
+Email : danny@gmail.com
+Telefono : 0987326319
+Tipo de matricula : PRIMERA
+Nota : 14.0
+Supletorio : No requiere supletorio
+Gratuity : Con Gratuidad
