@@ -8,7 +8,7 @@ package com.mycompany.exam2alexisviteri;
  *
  * @author G406
  */
-public class MainClass {
+public class MainClass { //0.5
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
