@@ -4,29 +4,29 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import ec.edu.espe.quizz.model.Countries;
+
 import org.bson.Document;
 /**
  *
- * @author Saray Cañarte & Christian Bonifaz
+ * @author Saray Cañarte 
  */
-public class MongoDBUtil {
+/*public class MongoDBUtil {
 
     public static boolean create(Countries countries) {
         String uri = "mongodb+srv://canarte:canarte@cluster0.devwm9s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
         try (MongoClient mongoClient = MongoClients.create(uri)) {
             MongoDatabase dataBase = openConnectionToMongo(mongoClient);
-            Document dataOfAnimal = new Document()
+            Document Countries = new Document()
                 .append("id", countries.getId())
                 .append("name", countries.getName())
                 .append("initialpbi", countries.getInitialPbi()
                 .append("finalpbi", countries.getInitialPbi()
                 .append("result", countries.getResult());
 
-            String collection = "COUNTRIES";
+            String collection = "Countries";
             MongoCollection<Document> mongoCollection = accessToCollections(dataBase, collection);
-            insertOneData(dataOfAnimal, mongoCollection);
+            insertOneData(Countries, mongoCollection);
             return true; 
         } catch (Exception e) {
             e.printStackTrace();
@@ -45,4 +45,4 @@ public class MongoDBUtil {
     public static void insertOneData(Document data, MongoCollection<Document> mongoCollection) {
         mongoCollection.insertOne(data);
     }
-}
+}*/
