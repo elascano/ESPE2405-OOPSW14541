@@ -4,6 +4,9 @@
  */
 package ec.edu.espe.apartments.view;
 
+import ec.edu.espe.apartments.model.Apartments;
+import utils.ExportDB;
+
 /**
  *
  * @author G406
@@ -58,6 +61,11 @@ public class FrmMenu extends javax.swing.JFrame {
 
         btnRegister.setFont(new java.awt.Font("Segoe UI Emoji", 3, 14)); // NOI18N
         btnRegister.setText("Registrar");
+        btnRegister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegisterActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -120,6 +128,23 @@ public class FrmMenu extends javax.swing.JFrame {
     private void txtNumDepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumDepActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumDepActionPerformed
+
+    private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
+        // TODO add your handling code here:
+        Apartments apartments;
+        int numDep;
+        int size;
+        int time;
+        int price;
+        
+        numDep = Integer.parseInt(txtNumDep.getText());
+        size = Integer.parseInt(txtSize.getText());
+        time = Integer.parseInt(txtTime.getText());
+        price = Integer.parseInt(txtPrice. getText());
+        apartments = new Apartments(numDep, size, time, price);
+        
+        ExportDB.createApartmet(apartments);
+    }//GEN-LAST:event_btnRegisterActionPerformed
 
     /**
      * @param args the command line arguments
