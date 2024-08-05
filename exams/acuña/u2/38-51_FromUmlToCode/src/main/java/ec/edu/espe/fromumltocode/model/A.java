@@ -7,12 +7,12 @@ package ec.edu.espe.fromumltocode.model;
  * @author Marcelo Acuña 
  *
  */
-public class A {
-    private A a;
+public class A {        //0.5 
+    private A a;        //0 no hay Arralist 
     public A(){
     
     }
-
+    // 0.2
     public A(A a) {
         this.a = a;
     }

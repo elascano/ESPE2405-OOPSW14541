@@ -8,7 +8,7 @@ package com.mycompany.exam2alexisviteri;
  *
  * @author G406
  */
-public class J {
+public class J { //1
 
     public J() {
     }
