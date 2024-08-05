@@ -1,0 +1,22 @@
+class Condor extends Bird {
+    constructor(montain, id, description, bornOnDate, gender, cage, numberOfBones, vetebrate) {
+        super(id, description, bornOnDate, gender, cage, numberOfBones, vetebrate);
+        this.montain = montain;
+    }
+
+    feed(food) {
+        console.log("Feeding a condor with dead animals");
+    }
+
+    getMontain() {
+        return this.montain;
+    }
+
+    setMontain(montain) {
+        this.montain = montain;
+    }
+
+    toString() {
+        return `Condor{montain=${this.montain}, ${super.toString()}}`;
+    }
+}

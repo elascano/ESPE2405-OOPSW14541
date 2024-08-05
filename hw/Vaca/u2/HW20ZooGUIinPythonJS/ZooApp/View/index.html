@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Zoo Management System</h1>
+  <form id="animalForm">
+    <input type="text" id="id" name="id" placeholder="ID" required>
+    <input type="text" id="description" name="description" placeholder="Description" required>
+    <input type="date" id="bornOnDate" name="bornOnDate" required>
+    <select id="gender" name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <select id="cage" name="cage" required>
+      <option value="" disabled selected>Select Cage</option>
+      <option value="feline cage">Feline Cage</option>
+      <option value="stable horse">Stable Horse</option>
+      <option value="bird cage">Bird Cage</option>
+      <option value="shark tank">Shark Tank</option>
+    </select>
+    <input type="number" id="numberOfBones" name="numberOfBones" placeholder="Number of Bones" required>
+    <label>
+      <input type="checkbox" id="vetebrate" name="vetebrate">
+      Vetebrate
+    </label>
+    <select id="food" name="food" multiple required>
+      <option value="Mouse">Mouse</option>
+      <option value="Rabbit">Rabbit</option>
+      <option value="Dear">Dear</option>
+      <option value="Meat">Meat</option>
+      <option value="Grains">Grains</option>
+      <option value="Fish">Fish</option>
+      <option value="Apple">Apple</option>
+    </select>
+    <button type="submit">Add Animal</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

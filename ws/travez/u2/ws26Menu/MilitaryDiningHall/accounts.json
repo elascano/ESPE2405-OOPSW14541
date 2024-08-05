@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"test@test":{"id":123,"name":"test","email":"test@test","password":"123","type":"Commensal","grade":"public servant"},"admin@test":{"id":345,"name":"ADMIN","email":"admin@test","password":"123","type":"Admin","grade":"commander"}}
+=======
+{"ismael@test":{"id":123,"name":"Ismael","email":"ismael@test","password":"123","type":"Commensal","grade":"public servant"},"carlospe0505@gmail.com":{"id":1752874568,"name":"Carlos","email":"carlospe0505@gmail.com","password":"123456789","type":"Commensal","grade":"public servant"},"calorao@gmail.com":{"id":1752874568,"name":"Calors","email":"calorao@gmail.com","password":"12345","type":"Commensal","grade":"public servant"}}
+>>>>>>> 5093f1501a789f920a1e9544b4c4d8ccf513b8e4
