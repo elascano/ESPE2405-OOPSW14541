@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  },
+    "scripts": {
+      "test": "jest"
+    }
+}
