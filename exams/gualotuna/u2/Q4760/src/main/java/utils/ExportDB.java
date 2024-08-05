@@ -23,7 +23,7 @@ import org.bson.Document;
 public class ExportDB {
     public static boolean createApartmet(Apartments apartments) {
 
-        String uri = "mongodb+srv://mateolisintuna:CristianMateo@cluster0.vhefvyu.mongodb.net/";
+        String uri = "mongodb+srv://bpgualotuna1:bpgualotuna1@cluster0.elvwlgc.mongodb.net/";
 
         MongoDatabase dataBase = openConnectionToMongo(uri);
         Document dataOfUser = new Document().append("numDep", apartments.getNumDep()).append("Size", apartments.getSize()).append("time", apartments.getTime()).append("price", apartments.getPrice());

@@ -21,6 +21,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
-        <exec.mainClass>com.mycompany.q4760.Q4760</exec.mainClass>
+        <exec.mainClass>ec.edu.espe.apartments.view.FrmMenu</exec.mainClass>
     </properties>
 </project>
