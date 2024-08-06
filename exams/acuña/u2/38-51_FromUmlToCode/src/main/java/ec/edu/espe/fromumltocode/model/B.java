@@ -9,9 +9,10 @@ import java.util.ArrayList;
  * @author Marcelo Acuña 
  *
  */
-public class B extends A {
-    private ArrayList<H> h;
+public class B extends A { //0.5
+    private ArrayList<H> h; // 0.5
     
+    //0.2
     public B(){
     
     }

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1516141917,
+        "name": "Maria Diaz",
+        "email": "maria@gmail.com",
+        "password": "Lola",
+        "grade": "publicServant",
+        "type": "commensals",
+        "balance": 65.0,
+        "bookedDays": [
+                "2024-06-15T05:00:00.00Z",
+                "2024-07-12T05:00:00.00Z",
+                "2024-08-11T05:00:00.00Z",
+                "2024-09-15T05:00:00.00Z"
+        ]
+    }
+]

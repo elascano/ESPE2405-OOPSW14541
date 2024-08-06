@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.window {
+    width: 500px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #d3d3d3;
+    border-bottom: 1px solid #000;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p, .content ul, .actions, .combo-boxes {
+    margin-bottom: 20px;
+}
+
+.actions, .combo-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actions button, .combo-boxes select {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.actions button:hover, .combo-boxes select:hover {
+    background-color: #d0d0d0;
+}
+
+label {
+    margin-bottom: 5px;
+}
