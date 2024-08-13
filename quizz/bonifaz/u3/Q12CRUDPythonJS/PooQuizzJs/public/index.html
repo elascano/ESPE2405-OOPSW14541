@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Player</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Soccer Player</h2>
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción:</label>
+            <input type="text" id="description" name="description">
+        </div>
+        <div class="form-group">
+            <label for="goal">Goles:</label>
+            <input type="text" id="goal" name="goal">
+        </div>
+        <div class="form-group">
+            <label for="asist">Asistencias:</label>
+            <input type="text" id="asist" name="asist">
+        </div>
+        <div class="buttons">
+            <button class="cancel" onclick="resetForm()">Cancel</button>
+            <button class="save" onclick="savePlayer()">Guardar</button>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
