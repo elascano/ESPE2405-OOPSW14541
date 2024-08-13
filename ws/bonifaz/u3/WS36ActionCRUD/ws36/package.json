@@ -1,0 +1,15 @@
+{
+  "name": "ws36",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
