@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellphone Application</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <h2>Search Cellphone</h2>
+    <form action="/search-cellphone" method="POST">
+        <label for="search-id">ID:</label>
+        <input type="text" id="search-id" name="id" required><br>
+        <button type="submit">Search Cellphone</button>
+    </form>
+
+    <% if (typeof message !== 'undefined') { %>
+        <p><%= message %></p>
+    <% } %>
+
+    <% if (cellphone !== null) { %>
+        <h2>Cellphone Details</h2>
+        <p>ID: <%= cellphone.id %></p>
+        <p>Model: <%= cellphone.model %></p>
+        <p>Year: <%= cellphone.year %></p>
+        <% if (price !== null) { %>
+            <p>Calculated Price: <%= price %></p>
+        <% } %>
+    <% } %>
+</body>
+</html>

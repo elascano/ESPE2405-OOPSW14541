@@ -113,6 +113,11 @@ HEAD
 
 c0f56bfc46b59c00e80dd960ebf863d24c451dac
 a8299d1cd1e8c649fb8bde993b47cc32bd48683f
+<<<<<<< HEAD
+/hw/marquez/u2/New Folder/JavaWhithMongoDB/nbproject/private/
+/hw/marquez/u2/New Folder/JavaWhithMongoDB/build/
+/ws/marquez/u2/New Folder/Zoo/target/
+=======
 /hw/CEDENOR/U2/hw15/MongoConnection/nbproject/private/
 /hw/CEDENOR/U2/hw15/MongoConnection/build/
 /ws/cedenor/U2/WS23UnitTest/ComplitexOperations/target/
@@ -142,4 +147,14 @@ a8299d1cd1e8c649fb8bde993b47cc32bd48683f
 /hw/cedenor/U2/HW17TestCaseSolution/ComplexOperations/nbproject/
 >>>>>>> 4c14bcefe6819b94098812941b3a2e7b27297f06
 >>>>>>> b713e044353a5fde61d3fcd19677ae27d8ead178
+<<<<<<< HEAD
 /hw/cedenor/U3/HW23_SOLID/MazeGenerator/target/
+=======
+<<<<<<< HEAD
+/exams/viteri/U2/ViteriQ71/ViteriQ71/ViteriQ61/target/
+=======
+/exams/segarra/u2/Q6170/target/
+>>>>>>> 6222a861e1bcf6d307547346cc0af8ce41c67c7b
+>>>>>>> ade119d2bc193baf91885da3710006f94a119241
+/hw/ayuquina/u3/hw22SOLIDPrinciples/MazeCode/MazeGeneratorAplication/target/
+>>>>>>> 270fa5a5fec301f9461b4786eab2e0c174014a3f

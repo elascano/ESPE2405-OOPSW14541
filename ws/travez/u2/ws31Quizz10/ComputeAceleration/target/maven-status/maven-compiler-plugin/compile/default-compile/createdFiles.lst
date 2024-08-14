@@ -1,0 +1,7 @@
+ec\edu\espe\event\computeaceleration\model\Aceleration.class
+ec\edu\espe\event\computeaceleration\view\EnterData.class
+utils\CloudController.class
+ec\edu\espe\event\computeaceleration\view\EnterData$1.class
+ec\edu\espe\event\computeaceleration\view\EnterData$2.class
+ec\edu\espe\event\computeaceleration\view\Q06.class
+ec\edu\espe\event\computeaceleration\controller\ComputeAcelearation.class

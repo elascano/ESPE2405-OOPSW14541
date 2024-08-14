@@ -5,9 +5,11 @@ import ec.edu.espe.theoryexam.model.*;
  *
  * @author Christian Bonifaz, Code Creators, DCCO-ESPE 
  */
-public class ExamExercise38 {
+public class ExamExercise38 {//0.5
 
     public static void main(String[] args) {
+        
+        //0.4 
         A a = new A(new A());
         B b = new B();
         C c = new C();
@@ -18,6 +20,7 @@ public class ExamExercise38 {
         H h = null;
         J j = null;
         
+        //0.5
         System.out.println("Christian´s ExamExercise38");
         System.out.println("A : " + a);
         System.out.println("B : " + b);
