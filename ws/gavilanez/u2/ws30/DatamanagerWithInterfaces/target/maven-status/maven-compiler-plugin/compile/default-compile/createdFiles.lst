@@ -1,0 +1,4 @@
+utils\DataManager.class
+utils\FileManager.class
+utils\JsonManager.class
+ec\edu\espe\datamanagerwithinterfaces\DatamanagerWithInterfaces.class
