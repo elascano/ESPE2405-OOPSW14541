@@ -23,7 +23,7 @@ import org.bson.Document;
 public class ExportDB {
     public static boolean createApartmet(Apartments apartments) {
 
-        String uri = "mongodb+srv://mateolisintuna:CristianMateo@cluster0.vhefvyu.mongodb.net/";
+        String uri = "mongodb+srv://bpgualotuna1:bpgualotuna1@cluster0.elvwlgc.mongodb.net/";
 
         MongoDatabase dataBase = openConnectionToMongo(uri);
         Document dataOfUser = new Document().append("numDep", apartments.getNumDep()).append("Size", apartments.getSize()).append("time", apartments.getTime()).append("price", apartments.getPrice());
@@ -71,7 +71,7 @@ public class ExportDB {
     //Abir conexión con mongoDB
     public static MongoDatabase openConnectionToMongo(String uri) {
         MongoClient mongoClient = MongoClients.create(uri);
-        MongoDatabase dataBase = mongoClient.getDatabase("OOP");
+        MongoDatabase dataBase = mongoClient.getDatabase("oop");
         
 
         return dataBase;
@@ -82,7 +82,7 @@ public class ExportDB {
     public List<Document> getAllDocuments() {
         String uri = "mongodb+srv://mateolisintuna:CristianMateo@cluster0.vhefvyu.mongodb.net/";
         MongoClient mongoClient = MongoClients.create(uri);
-        MongoDatabase database = mongoClient.getDatabase("OOP");
+        MongoDatabase database = mongoClient.getDatabase("oop");
         MongoCollection<Document> collection = database.getCollection("megaSoftProducts");
         
         List<Document> documents = new ArrayList<>();

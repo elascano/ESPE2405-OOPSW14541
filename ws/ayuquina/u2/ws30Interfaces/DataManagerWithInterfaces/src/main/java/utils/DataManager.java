@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public interface DataManager {
     String DATABASENAME = "oop";
     
-    public abstract void create(String data, String collection);
-    public abstract void update(String data, String collection, String newData);
-    public abstract ArrayList<String> read(String collection);
-    public abstract void delete(String collection, String searchData);
+    public  void create(String data, String collection);
+    public  void update(String data, String collection, String newData);
+    public  ArrayList<String> read(String collection);
+    public  void delete(String collection, String searchData);
 }

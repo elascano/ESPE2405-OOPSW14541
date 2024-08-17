@@ -8,7 +8,7 @@ package com.mycompany.exam2alexisviteri;
  *
  * @author G406
  */
-public class D extends A{
+public class D extends A{ //0.5
 
     public D() {
     }
