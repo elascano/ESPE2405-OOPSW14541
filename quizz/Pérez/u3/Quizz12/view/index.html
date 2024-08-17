@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stores</h1>
+        <form id="store-form">
+            <label for="store-id">Enter the ID for the store:</label>
+            <input type="text" id="store-id" name="store-id" required>
+
+            <label for="store-name">Enter the name of your store:</label>
+            <input type="text" id="store-name" name="store-name" required>
+
+            <label for="inventory">How much inventory of all the products of the store?</label>
+            <input type="number" id="inventory" name="inventory" required>
+
+            <label for="sales">How much sales do your store had this month?</label>
+            <input type="number" id="sales" name="sales" required>
+
+            <button type="submit">Create Store</button>
+        </form>
+
+        <div class="output">
+            The efficiency of your store is: <span id="efficiency"></span>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

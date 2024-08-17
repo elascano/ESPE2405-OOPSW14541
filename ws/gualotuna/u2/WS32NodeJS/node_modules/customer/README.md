@@ -1,0 +1,4 @@
+customer
+========
+
+opinionated JavaScript client
