@@ -10,11 +10,13 @@ import ec.edu.espe.strategypattern.view.SortingStrategy;
  * @author Carlos Perez,The Javas, DCCO-ESPE
  */
 public class SortingContext {
-    private SortingStrategy ss;
+private SortingStrategy ss;
+    private String usedStrategy;
 
     public int[] sort(int data[]) {
         int size = data.length;
         ss = setSortStrategy(size);
+        usedStrategy = ss.getClass().getSimpleName();  // Get the name of the sorting strategy class
         return ss.sort(data);
     }
 
@@ -26,7 +28,11 @@ public class SortingContext {
         } else if (n >= 100) {
             ss = new QuickSort();
         }
-        return ss; 
+        return ss;
+    }
+
+    public String getUsedStrategy() {
+        return usedStrategy;
     }
 
 }

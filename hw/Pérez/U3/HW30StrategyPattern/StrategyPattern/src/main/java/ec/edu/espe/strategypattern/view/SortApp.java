@@ -8,8 +8,8 @@ import java.util.Scanner;
  */
 public class SortApp {
     public static void main(String[] args) {
-        InputHandler controller = new InputHandler();
-        controller.sortAndDisplay();
+        InputHandler handler = new InputHandler();
+        handler.sortAndDisplay();
     }
     
 }

@@ -1,6 +1,9 @@
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\BubbleSort.java
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\SortApp.java
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\QuickSort.java
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\SortingStrategy.java
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\InsertionSort.java
-C:\Users\Carlos\Documents\NetBeansProjects\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\SortingContext.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\view\SortingApp.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\QuickSort.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\SortingContext.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\InputHandler.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\BubbleSort.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\view\SortingStrategy.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\SortingController.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\controller\InsertionSort.java
+C:\Users\Carlos\Desktop\Pérez\U3\HW30StrategyPattern\StrategyPattern\src\main\java\ec\edu\espe\strategypattern\view\SortApp.java

@@ -1,15 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.strategypattern.controller;
+
+import ec.edu.espe.strategypattern.view.SortingStrategy;
 import java.util.Scanner;
+
 /**
  *
- * @author Carlos Perez,The Javas, DCCO-ESPE
+ * @author Carlos Perez, The Javas, DCCO-ESPE
  */
 public class InputHandler {
-        public void sortAndDisplay() {
+
+public void sortAndDisplay() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the number of elements:");
@@ -29,5 +29,6 @@ public class InputHandler {
             System.out.print(num + " ");
         }
         System.out.println();
+        System.out.println("Sorting method used: " + sc.getUsedStrategy());
     }
 }
