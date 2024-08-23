@@ -51,7 +51,7 @@ public class ExportDB {
         String uri = "mongodb+srv://mateolisintuna:CristianMateo@cluster0.vhefvyu.mongodb.net/";
 
         try (MongoClient mongoClient = MongoClients.create(uri)) {
-            MongoDatabase database = mongoClient.getDatabase("OOP");
+            MongoDatabase database = mongoClient.getDatabase("oop");
             MongoCollection<Document> collection = database.getCollection("megaSoftClients");
 
             Document user = collection.find(Filters.eq("id", username)).first();
