@@ -1,0 +1,11 @@
+@startuml
+class ec.edu.espe.mazegenerator.controller.MazeController
+class ec.edu.espe.mazegenerator.model.Maze
+class ec.edu.espe.mazegenerator.model.MazeGenerator
+class ec.edu.espe.mazegenerator.view.MazeGenerated
+class ec.edu.espe.mazegenerator.view.MazeView
+ec.edu.espe.mazegenerator.view.MazeGenerated ..> ec.edu.espe.mazegenerator.model.Maze
+ec.edu.espe.mazegenerator.view.MazeView ..> ec.edu.espe.mazegenerator.controller.MazeController
+ec.edu.espe.mazegenerator.view.MazeView ..> ec.edu.espe.mazegenerator.model.Maze
+ec.edu.espe.mazegenerator.view.MazeView ..> ec.edu.espe.mazegenerator.model.MazeGenerator
+@enduml
