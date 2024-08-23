@@ -1,0 +1,8 @@
+ec\edu\espe\compositepattern\controller\Employee.class
+ec\edu\espe\compositepattern\controller\Teller.class
+ec\edu\espe\compositepattern\controller\Client.class
+ec\edu\espe\compositepattern\controller\Manager.class
+ec\edu\espe\compositepattern\controller\President.class
+ec\edu\espe\compositepattern\controller\Clerk.class
+ec\edu\espe\compositepattern\view\Setup.class
+ec\edu\espe\compositepattern\controller\Supervisor.class
