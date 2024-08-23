@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class ComplexOperations {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Complex Operations \nMarcelo Acuna");
+        System.out.println("Welcome to Complex Operations \nBrayan Gualotuna");
         
         float addend1;
         float addend2;
