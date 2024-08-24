@@ -1,4 +1,3 @@
-
 package ec.edu.espe.controller;
 
 /**
@@ -13,10 +12,18 @@ public class SortingContext {
     }
 
     public void sort(int[] numbers) {
-        strategy.sort(numbers);
+        if (strategy != null) {
+            strategy.sort(numbers);
+        } else {
+            throw new IllegalStateException("Sorting strategy not set");
+        }
     }
 
     public String getSortStrategyName() {
-        return strategy.getStrategyName();
+        if (strategy != null) {
+            return strategy.getStrategyName();
+        } else {
+            return "No strategy set";
+        }
     }
 }

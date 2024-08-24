@@ -9,6 +9,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
-        <exec.mainClass>ec.edu.espe.hw30strategy.HW30Strategy</exec.mainClass>
+        <exec.mainClass>ec.edu.espe.app.SortApp</exec.mainClass>
     </properties>
 </project>
