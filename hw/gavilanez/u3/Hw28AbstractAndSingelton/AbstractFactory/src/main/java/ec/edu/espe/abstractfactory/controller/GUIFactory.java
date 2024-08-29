@@ -13,10 +13,14 @@ public abstract class GUIFactory {
         }
         else{
             return (new LinuxFactory());
-            
         }
         
-        public abstract Button createButton();
-        public abstract Menu createMenu();
     }
+
+    private static int readFromConfigFile(String os_type) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public abstract Button createButton();
+    public abstract Menu createMenu();
 }

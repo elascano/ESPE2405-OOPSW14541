@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espe.singleton.view;
 
 import ec.edu.espe.singleton.controller.USTax;
@@ -12,8 +9,11 @@ import ec.edu.espe.singleton.controller.USTax;
  */
 public class Calculator {
     public static void main(String[] args) {
+        float total;
         USTax tax = USTax.getInstance();
-        tax.salesTotal();
+        total = tax.salesTotal();
+        System.out.println("Total Sale: " + total);
+        
     }
             
 }
