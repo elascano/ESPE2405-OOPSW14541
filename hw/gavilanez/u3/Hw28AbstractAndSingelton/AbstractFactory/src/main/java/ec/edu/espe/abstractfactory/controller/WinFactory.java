@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espe.abstractfactory.controller;
 
 /**
@@ -10,9 +7,9 @@ package ec.edu.espe.abstractfactory.controller;
  */
 public class WinFactory extends GUIFactory{
     public Button createButton(){
-        return (new LinuxButton());
+        return (new WinButton());
     }
     public Menu createMenu(){
-        return (new LinuxMenu());
+        return (new WinMenu());
     }
 }

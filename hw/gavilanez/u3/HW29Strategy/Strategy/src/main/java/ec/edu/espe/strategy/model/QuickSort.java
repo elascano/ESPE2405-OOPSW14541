@@ -1,11 +1,13 @@
 
 package ec.edu.espe.strategy.model;
 
+import ec.edu.espe.strategy.controller.SortingStrategy;
+
 /**
  *
  * @author Kenny Gavilanez, Dev Dynasty, DCCO-ESPE
  */
-public class QuickSort extends SortingContext {
+public class QuickSort extends SortingStrategy {
 
     public QuickSort() {
     }

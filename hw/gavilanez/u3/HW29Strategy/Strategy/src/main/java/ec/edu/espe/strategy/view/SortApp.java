@@ -2,6 +2,7 @@
 package ec.edu.espe.strategy.view;
 
 import ec.edu.espe.strategy.model.SortingContext;
+import java.util.Scanner;
 
 /**
  *
@@ -9,19 +10,28 @@ import ec.edu.espe.strategy.model.SortingContext;
  */
 public class SortApp {
     public static void main(String[] args) {
-        int array[] = {3, 6, 4, 6, 7, 8, 5, 6, 7, 5, 3, 3};
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int number = scanner.nextInt();
+        int array[] = new int[number];
 
-        System.out.println("\nArray list without sort:");
+        System.out.println("Enter the array elements:");
+        for (int i = 0; i < number; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            array[i] = scanner.nextInt();
+        }
+
+        System.out.println("\n Array list without sort:");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
 
         SortingContext sortAlgorithm = new SortingContext();
         sortAlgorithm.sort(array);
-
-        System.out.println("\nResult of the sorted array list: ");
+        System.out.println("\n Result of the sorted array list: ");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
+        scanner.close();
     }
 }
