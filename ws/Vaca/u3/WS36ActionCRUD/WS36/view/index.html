@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Amigo</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="searchForm">
+    <h1>Buscar Amigo</h1>
+    <form id="friendForm">
+      <input type="text" id="name" placeholder="Ingresa el nombre del amigo" required>
+      <input type="text" id="lastName" placeholder="Ingresa el apellido del amigo" required>
+      <input type="submit" value="Buscar">
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('friendForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const lastName = document.getElementById('lastName').value;
+      try {
+        const response = await fetch(`/api/friends/${name}/${lastName}`);
+        const data = await response.json();
+
+        if (response.ok) {
+          document.getElementById('result').innerHTML = `
+            <h2>Resultado</h2>
+            <p><strong>Nombre:</strong> ${data.name} ${data.lastName}</p>
+            <p><strong>Año de Nacimiento:</strong> ${data.yearOfBirth}</p>
+            <p><strong>Edad:</strong> ${data.age} años</p>
+          `;
+        } else {
+          document.getElementById('result').innerHTML = `<p>${data.message}</p>`;
+        }
+      } catch (error) {
+        document.getElementById('result').innerHTML = `<p>Error al buscar el amigo</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

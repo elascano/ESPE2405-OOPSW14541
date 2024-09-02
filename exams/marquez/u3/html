@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortApp</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Ordenamiento</h1>
+    <input type="text" id="inputArray" placeholder="Ingrese números separados por comas">
+    <button id="sortButton">Ordenar</button>
+    <div id="result"></div>
+</body>
+</html>
