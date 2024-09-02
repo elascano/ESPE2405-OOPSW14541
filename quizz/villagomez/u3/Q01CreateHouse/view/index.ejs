@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House List</title>
+</head>
+<body>
+    <h1>House List</h1>
+    <ul>
+        <% houses.forEach(house => { %>
+            <li>
+                ID: <%= house.id %><br>
+                Description: <%= house.description %><br>
+                Date of Building: <%= house.dateOfBuilding.toDateString() %><br>
+                Years of Existence: <%= house.yearsOfExistence %>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/new">Add New House</a>
+</body>
+</html>
