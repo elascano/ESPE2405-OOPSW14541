@@ -1,0 +1,34 @@
+const House = require('./model/House');
+const { calculateYearsOfExistence } = require('../utils/dateUtils');
+
+exports.getAllHouses = async (req, res) => {
+    try {
+        const houses = await House.find();
+        res.render('index', { houses });
+    } catch (error) {
+        res.status(500).send('Error fetching houses');
+    }
+};
+
+exports.showAddForm = (req, res) => {
+    res.render('form');
+};
+
+exports.addHouse = async (req, res) => {
+    try {
+        const { id, description, dateOfBuilding } = req.body;
+        const yearsOfExistence = calculateYearsOfExistence(new Date(dateOfBuilding));
+        
+        const newHouse = new House({
+            id,
+            description,
+            dateOfBuilding,
+            yearsOfExistence
+        });
+
+        await newHouse.save();
+        res.redirect('/');
+    } catch (error) {
+        res.status(500).send('Error adding house');
+    }
+};
