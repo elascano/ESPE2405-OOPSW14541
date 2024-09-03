@@ -1,0 +1,11 @@
+model\GUIFactory.class
+model\WinButton.class
+model\WinMenu.class
+model\Menu.class
+controller\ClientApp.class
+model\WinFactory.class
+model\Button.class
+view\Main.class
+model\LinuxButton.class
+model\LinuxMenu.class
+model\LinuxFactory.class
