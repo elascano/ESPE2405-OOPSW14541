@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting App</title>
+    <script defer src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <label for="inputNumbers">Enter numbers (comma-separated):</label>
+        <textarea id="inputNumbers" placeholder="e.g., 5, 3, 8, 1"></textarea>
+        
+        <button id="sortButton">Sort</button>
+        
+        <div id="outputNumbers"></div>
+    </div>
+</body>
+</html>
+
