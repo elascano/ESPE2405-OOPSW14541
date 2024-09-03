@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New House</title>
+</head>
+<body>
+    <h1>Add New House</h1>
+    <form action="/add" method="POST">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+        
+        <label for="dateOfBuilding">Date of Building:</label>
+        <input type="date" id="dateOfBuilding" name="dateOfBuilding" required><br><br>
+        
+        <input type="submit" value="Add House">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Application</h1>
+        <input type="text" id="numberInput" placeholder="Enter numbers separated by commas">
+        <select id="algorithmSelect">
+            <option value="bubble">Bubble Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="quick">Quick Sort</option>
+        </select>
+        <button id="sortButton">Sort</button>
+        <div id="result"></div>
+    </div>
+
+    <script type="module" src="../controller/app.js"></script>
+</body>
+</html>

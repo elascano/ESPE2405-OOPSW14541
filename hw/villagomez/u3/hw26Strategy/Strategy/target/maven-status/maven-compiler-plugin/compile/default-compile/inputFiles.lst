@@ -1,8 +1,11 @@
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\Context.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\controller\SortingStrategy.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\view\SortApp.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\controller\SortingContext.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\InsertionSort.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\BubbleSort.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\view\FrmSortApp.java
-C:\Users\usuar\OneDrive\ESPE\2 software\POO\repositorio\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\QuickSort.java
+<<<<<<< HEAD
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\Context.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\controller\SortingStrategy.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\InsertionSort.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\BubbleSort.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\view\SortApp.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\controller\SortingContext.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\model\QuickSort.java
+C:\Prueba\ESPE2405-OOPSW14541\hw\villagomez\u3\hw26Strategy\Strategy\src\main\java\view\FrmSortApp.java
+=======
+>>>>>>> 9e1cc02a6f124370ad324d75be493d23d34c9a5a
