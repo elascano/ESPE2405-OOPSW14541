@@ -1,11 +1,13 @@
 
 package ec.edu.espe.strategy.model;
 
+import ec.edu.espe.strategy.controller.SortingStrategy;
+
 /**
  *
  * @author Kenny Gavilanez, Dev Dynasty, DCCO-ESPE
  */
-public class InsertionSort extends SortingContext{
+public class InsertionSort extends SortingStrategy{
     @Override
     public void sort(int[] array) {
         quickSort(array, 0, array.length - 1);

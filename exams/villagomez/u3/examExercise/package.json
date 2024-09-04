@@ -1,0 +1,14 @@
+{
+  "name": "examExercise",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.19.2",
+    "mongoose": "^5.13.22"
+  }
+}

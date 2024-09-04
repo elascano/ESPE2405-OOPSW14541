@@ -1,11 +1,13 @@
 
 package ec.edu.espe.strategy.model;
 
+import ec.edu.espe.strategy.controller.SortingStrategy;
+
 /**
  *
  * @author Kenny Gavilanez, Dev Dynasty, DCCO-ESPE
  */
-public class BubbleSort extends SortingContext{
+public class BubbleSort extends SortingStrategy{
 
     public BubbleSort() {
     }
