@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author  Brayan Gualotuña  
+ * @author  Brayan Gualotuña, Dev Dynasty, DCCO-ESPE 
  */
 public class SortApp {
 
