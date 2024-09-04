@@ -1,0 +1,11 @@
+espe\edu\ec\SortApp\view\SortApp.class
+espe\edu\ec\SortApp\controller\SortingStrategy.class
+espe\edu\ec\SortApp\model\Context.class
+espe\edu\ec\SortApp\model\InsertionSort.class
+espe\edu\ec\SortApp\controller\SortingContext.class
+espe\edu\ec\SortApp\view\FrmSortApp$3.class
+espe\edu\ec\SortApp\view\FrmSortApp.class
+espe\edu\ec\SortApp\view\FrmSortApp$1.class
+espe\edu\ec\SortApp\model\BubbleSort.class
+espe\edu\ec\SortApp\model\QuickSort.class
+espe\edu\ec\SortApp\view\FrmSortApp$2.class
