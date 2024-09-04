@@ -9,7 +9,11 @@ const port = 4000;
 
 const mongoDBUri = process.env.MONGODB_URI;
 
-mongoose.connect(mongoDBUri, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoDBUri)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+
 
 const dataSchema = new mongoose.Schema({
     unsortedArray: [Number],
