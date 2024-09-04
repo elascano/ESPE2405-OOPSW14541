@@ -11,4 +11,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>ec.edu.espe.event.hw29compositepattern.Setup</exec.mainClass>
     </properties>
+    <name>HW29CompositePattern</name>
 </project>
