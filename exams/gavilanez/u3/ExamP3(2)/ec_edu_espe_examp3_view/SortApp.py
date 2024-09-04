@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r'C:\KennyPOO\ESPE2405-OOPSW14541\exams\gavilanez\u3\ExamP3')
+sys.path.append(r'C:\KennyPOO\ESPE2405-OOPSW14541\exams\gavilanez\u3\ExamP3(2)')
 
 from ec_edu_espe_examp3_controller.MongoBD import MongoDB
 from ec_edu_espe_examp3_model.BubbleSort import BubbleSort 
